@@ -11,6 +11,23 @@
     hello lp test page
     <script type="text/javascript">
 
+
+        console.log("done registering hooks0");
+        /* lp hooks */
+        lpTag.hooks = lpTag.hooks || [];
+        console.log("done registering hooks1");
+
+        lpTag.hooks.push({
+            name: "BEFORE_SEND_VISITOR_LINE",
+            callback: function (options) {
+                console.log(Date.now() + "before sde submit");
+                //options.data.answers = "masking answer";
+                return options;
+            }
+        });
+        console.log("done registering hooks");
+
+
         /* event binding example */
         function processThis(data, eventInfo) {
             if (window.console && window.JSON) {
@@ -25,6 +42,8 @@
 
         lpTag.events.bind("lpUnifiedWindow", "state", function (evData) { console.log(Date.now() + " state: " + JSON.stringify(evData)); });
 
+        lpTag.events.bind("lpUnifiedWindow", "conversationInfo", function (evData) { console.log(Date.now() + " conversationInfo: " + JSON.stringify(evData)); });
+
         lpTag.events.bind('lpUnifiedWindow', 'windowClosed', function (evData) {
             console.log(evData);
             console.log("window closed");
@@ -37,6 +56,8 @@
             document.getElementById("LP_DIV_1656014817418").style.display = "none";
             // lpTag.events.trigger('LP_OFFERS', 'HIDE');
         });
+
+        console.log("done registering hooks0.1");
 
         lpTag.sdes = lpTag.sdes || {};
         lpTag.sdes.push(
@@ -55,19 +76,6 @@
                 }]
             }
         );
-
-        /* lp hooks */
-        lpTag.hooks = lpTag.hooks || [];
-
-        lpTag.hooks.push({
-            name: "BEFORE_SURVEY_SUBMIT",
-            callback: function (options) {
-                console.log("before survey submit");
-                options.data.answers = "masking answer";
-                return options;
-            }
-        });
-
 
 
 
