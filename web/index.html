@@ -18,9 +18,25 @@
             }
         }
         // Use the above "processThis" callback to print event data and info to the console
-        lpTag.events.bind("lp_sdes", "VAR_ADDED", processThis);
+        // lpTag.events.bind("lp_sdes", "VAR_ADDED", processThis);
+        lpTag.events.bind("lp_sdes", "VAR_ADDED", function () { console.log("lp sde var added..."); });
 
+        lpTag.events.bind("lpUnifiedWindow", "resume", function () { console.log("resume..."); });
 
+        lpTag.events.bind("lpUnifiedWindow", "state", function (evData) { console.log(Date.now() + " state: " + JSON.stringify(evData)); });
+
+        lpTag.events.bind('lpUnifiedWindow', 'windowClosed', function (evData) {
+            console.log(evData);
+            console.log("window closed");
+            document.getElementById("LP_DIV_1656014817418").style.display = "block";
+        });
+
+        lpTag.events.bind("LP_OFFERS", "OFFER_CLICK", function (eventData, eventInfo) {
+            console.log("test clicks");
+            // debug;
+            document.getElementById("LP_DIV_1656014817418").style.display = "none";
+            // lpTag.events.trigger('LP_OFFERS', 'HIDE');
+        });
 
         lpTag.sdes = lpTag.sdes || {};
         lpTag.sdes.push(
@@ -40,11 +56,24 @@
             }
         );
 
+        /* lp hooks */
+        lpTag.hooks = lpTag.hooks || [];
+
+        lpTag.hooks.push({
+            name: "BEFORE_SURVEY_SUBMIT",
+            callback: function (options) {
+                console.log("before survey submit");
+                options.data.answers = "masking answer";
+                return options;
+            }
+        });
 
 
 
 
     </script>
+    <div id="LP_DIV_1656014817418"></div>
+    hello div
 </body>
 </head>
 
