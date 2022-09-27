@@ -1,0 +1,28 @@
+{
+  "eventName": "OFFER_DISPLAY",
+  "appName": "LP_OFFERS",
+  "data": {
+    "contexts": [
+      { "EngagementContext": { "id": "6" } },
+      { "pageContext": { "id": "4172712525" } }
+    ],
+    "campaignId": 265843914,
+    "engagementId": 1900150930,
+    "engagementRevision": 328,
+    "engagementType": 5,
+    "contextId": "6",
+    "zoneId": 275822914,
+    "state": 2,
+    "renderingType": 1,
+    "conversationType": 0,
+    "surveySkillIds": [],
+    "useSystemRouting": false,
+    "eventName": "SHOW",
+    "confKey": "265843914_1900150930_328",
+    "customTaglet": false,
+    "tglName": "overlay",
+    "instantiated": true,
+    "prevState": 1,
+    "engagementName": "PFX HTML Embedded Live Chat -MWR"
+  }
+},
