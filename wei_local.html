@@ -9,6 +9,22 @@
             <div id="divLiveChat"></div>
 
             <script type="text/javascript">
+
+                lpTag.hooks = lpTag.hooks || [];
+
+                // this works, trigger right before customer sends out a line
+                // would be useful for client side masking
+                console.log("register hook");
+                lpTag.hooks.push({
+                name: "BEFORE_SEND_VISITOR_LINE",
+                callback: function (options) {
+                    // options.data.answers = "masking answer";
+                    console.log("before send visitor line");
+                    return options;
+                }
+                });
+
+
                 lpTag.sdes= lpTag.sdes || {};
                 // lpTag.section = ["wat-live", "english"];
                 lpTag.section = ["development"];

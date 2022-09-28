@@ -12,6 +12,15 @@
             <div id="LP_EQ_French"></div>
 
             <script type="text/javascript">
+
+                // event binding
+                lpTag.events.bind("LP_OFFERS", "OFFER_CLICK", function(eventData, eventInfo){
+                    console.log("offer clicked");
+                    console.lgo(eventData);
+                    console.lgo(eventInfo);
+                });
+
+
                 lpTag.sdes= lpTag.sdes || {};
                 // lpTag.section = ["wat-live", "english"];
                 lpTag.section = ["development"];
