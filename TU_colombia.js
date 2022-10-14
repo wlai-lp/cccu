@@ -1,11 +1,12 @@
 var endFlag = false;
 var timeoutIndex;
+var endTimeoutIndex;
 // in milliseconds, 1 second = 1000, 1 min = 1sec * 60, 15 min = 1 min * 15
 var secondTimeout = 1000;
 var minuteTimeout = secondTimeout * 60;
 var fiftenMinutesTimeout = minuteTimeout * 15;
 var bufferTimeout = secondTimeout * 2;
-var debug = false;
+var debug = true;
 
 function tuLog(s) {
   if (debug) {
@@ -39,15 +40,19 @@ function closeSequence() {
 
 function autoClose(data, eventInfo) {
   // if conversation ended in any way, agent close, customer close, autoclose
+  tuLog(JSON.stringify(data));
+  tuLog(JSON.stringify(eventInfo));
   if (data.state == "ended") {
     endFlag = true;
-    tuLog("settimeout to close window");
-    // give user a minute before closes UI elements
-    timeoutIndex = setTimeout(closeSequence, minuteTimeout);
-    tuLog("timeout index is " + timeoutIndex);
+    tuLog("received end event, 1 minute to close window");
+    // give user a minute before closes UI elements, we do not want to reset this
+    endTimeoutIndex = setTimeout(closeSequence, minuteTimeout);
+    tuLog("timeout index is " + endTimeoutIndex);
   } else {
     if (!endFlag) {
       // any other action then reset timer and start a new one to autoclose window
+      // NOTE: this is not going to work becuase automessages would reset these timers
+      // if we want to do this, we will have to capture last user input instead
       tuLog("clear previous timeout " + timeoutIndex);
       clearTimeout(timeoutIndex);
       timeoutIndex = setTimeout(closeSequence, fiftenMinutesTimeout);
