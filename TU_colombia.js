@@ -12,15 +12,15 @@ function tuLog(s) {
 
 function closeWindow() {
   tuLog("close window");
-  if ($(".lpc_maximized-header__close-button").length > 0) {
-    $(".lpc_maximized-header__close-button").click();
+  if (document.querySelector(".lpc_maximized-header__close-button")) {
+    document.querySelector(".lpc_maximized-header__close-button").click();
   }
 }
 
 function closeSi() {
   tuLog("close si");
-  if ($(".lpc_confirmation-dialog__confirm-button").length > 0) {
-    $(".lpc_confirmation-dialog__confirm-button").click();
+  if (document.querySelector(".lpc_confirmation-dialog__confirm-button")) {
+    document.querySelector(".lpc_confirmation-dialog__confirm-button").click();
   }
 }
 
