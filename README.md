@@ -1,3 +1,8 @@
+# NOTE
+- Open project in vscode
+- install Live Server extension
+- right click on the desired html page and open with live server 
+
 # cccu
 cccu-demo
 
@@ -9,4 +14,4 @@ cccu-demo
 - TODO: add a sample to use section
 
 # wei_auth
-- TODO: add a section to do auth
+- authentication works
