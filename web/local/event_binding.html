@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BEGIN LivePerson Monitor. -->
+    <script
+        type="text/javascript">window.lpTag = window.lpTag || {}, 'undefined' == typeof window.lpTag._tagCount ? (window.lpTag = { wl: lpTag.wl || null, scp: lpTag.scp || null, site: '90412079' || '', section: lpTag.section || '', tagletSection: lpTag.tagletSection || null, autoStart: lpTag.autoStart !== !1, ovr: lpTag.ovr || {}, _v: '1.10.0', _tagCount: 1, protocol: 'https:', events: { bind: function (t, e, i) { lpTag.defer(function () { lpTag.events.bind(t, e, i) }, 0) }, trigger: function (t, e, i) { lpTag.defer(function () { lpTag.events.trigger(t, e, i) }, 1) } }, defer: function (t, e) { 0 === e ? (this._defB = this._defB || [], this._defB.push(t)) : 1 === e ? (this._defT = this._defT || [], this._defT.push(t)) : (this._defL = this._defL || [], this._defL.push(t)) }, load: function (t, e, i) { var n = this; setTimeout(function () { n._load(t, e, i) }, 0) }, _load: function (t, e, i) { var n = t; t || (n = this.protocol + '//' + (this.ovr && this.ovr.domain ? this.ovr.domain : 'lptag.liveperson.net') + '/tag/tag.js?site=' + this.site); var o = document.createElement('script'); o.setAttribute('charset', e ? e : 'UTF-8'), i && o.setAttribute('id', i), o.setAttribute('src', n), document.getElementsByTagName('head').item(0).appendChild(o) }, init: function () { this._timing = this._timing || {}, this._timing.start = (new Date).getTime(); var t = this; window.attachEvent ? window.attachEvent('onload', function () { t._domReady('domReady') }) : (window.addEventListener('DOMContentLoaded', function () { t._domReady('contReady') }, !1), window.addEventListener('load', function () { t._domReady('domReady') }, !1)), 'undefined' === typeof window._lptStop && this.load() }, start: function () { this.autoStart = !0 }, _domReady: function (t) { this.isDom || (this.isDom = !0, this.events.trigger('LPT', 'DOM_READY', { t: t })), this._timing[t] = (new Date).getTime() }, vars: lpTag.vars || [], dbs: lpTag.dbs || [], ctn: lpTag.ctn || [], sdes: lpTag.sdes || [], hooks: lpTag.hooks || [], identities: lpTag.identities || [], ev: lpTag.ev || [] }, lpTag.init()) : window.lpTag._tagCount += 1;</script>
+    <!-- END LivePerson Monitor. -->
+
+<body>
+    hello lp test page
+    <script type="text/javascript">
+
+
+        console.log("done registering hooks0");
+        /* lp hooks */
+        lpTag.hooks = lpTag.hooks || [];
+        console.log("done registering hooks1");
+
+        lpTag.hooks.push({
+            name: "BEFORE_SEND_VISITOR_LINE",
+            callback: function (options) {
+                console.log(Date.now() + "before sde submit");
+                //options.data.answers = "masking answer";
+                return options;
+            }
+        });
+        console.log("done registering hooks");
+
+
+        /* event binding example */
+        function processThis(data, eventInfo) {
+            if (window.console && window.JSON) {
+                console.log(JSON.stringify(data) + " triggered by: " + JSON.stringify(eventInfo));
+            }
+        }
+        // Use the above "processThis" callback to print event data and info to the console
+        // lpTag.events.bind("lp_sdes", "VAR_ADDED", processThis);
+        lpTag.events.bind("lp_sdes", "VAR_ADDED", function () { console.log("lp sde var added..."); });
+
+        lpTag.events.bind("lpUnifiedWindow", "resume", function () { console.log("resume..."); });
+
+        lpTag.events.bind("lpUnifiedWindow", "state", function (evData) { console.log(Date.now() + " state: " + JSON.stringify(evData)); });
+
+        lpTag.events.bind("lpUnifiedWindow", "conversationInfo", function (evData) { console.log(Date.now() + " conversationInfo: " + JSON.stringify(evData)); });
+
+        lpTag.events.bind('lpUnifiedWindow', 'windowClosed', function (evData) {
+            console.log(evData);
+            console.log("window closed");
+            document.getElementById("LP_DIV_1656014817418").style.display = "block";
+        });
+
+        lpTag.events.bind("LP_OFFERS", "OFFER_CLICK", function (eventData, eventInfo) {
+            console.log("test clicks");
+            // debug;
+            document.getElementById("LP_DIV_1656014817418").style.display = "none";
+            // lpTag.events.trigger('LP_OFFERS', 'HIDE');
+        });
+
+        console.log("done registering hooks0.1");
+
+        lpTag.sdes = lpTag.sdes || {};
+        lpTag.sdes.push(
+            {
+                "type": "cart", //mandatory
+                "total": 11.7, // total value of the cart affter discount
+                "currency": "USD",
+                "numItems": 6,
+                "products": [{
+                    "product": {
+                        "name": "prod1",
+                        "category": "category",
+                        "sku": "sku",
+                        "prive": 7.8
+                    }, "quantity": 1
+                }]
+            }
+        );
+
+
+
+    </script>
+    <div id="LP_DIV_1656014817418"></div>
+    hello div
+</body>
+</head>
+
+</html>
