@@ -1864,6 +1864,12 @@ Quote
 
             //https://idbridge.liveperson.net/api/account/59503281/unauth/resp/stateredirector
             //redirectURI: "waw/ezw/ewstatic/idb-landingpage.html",
+						// have a redirect page you have access to from your currect page (iframe)
+						// call TD IDP to do step 3
+						// redirect page
+						// check redirect page for id_token
+						// get id_token
+						// pass id_token in callback
             redirectURI: "https://static-assets.dev.fs.liveperson.com/openjdk/idb-landingpage.html",
             authURI: "https://idbridge.liveperson.net/api/account/" + lpAccountNo + "/unauth/req/" + brandIDPurl,
             clientID: "O4LeiFG0nl7fjUS0FpBts1u5VUIlyqoN",
