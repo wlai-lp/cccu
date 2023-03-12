@@ -15,6 +15,10 @@ function requestCobrowse(serviceId) {
       alert("The service number is invalid.");
     });
 
+    visitorApi.once("sessionEnd", function () {
+      alert("Cobrowse Session End callback.");
+    });
+
     visitorApi.once("sessionOffered", function (event) {
       console.log("Agent answered the request and offers a CoBrowse session");
       var automaticallyAcceptOffer = true; // Set to false if you would like to ask the visitor to confirm the session start.
