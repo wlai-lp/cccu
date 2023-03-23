@@ -1,0 +1,111 @@
+:root {
+  /*   
+  from https://codepen.io/itayko/pen/NWBEaLy/
+  Change the color of the primary color 
+  */
+  --primary-color: #68729e;
+
+  /*   Change the color of the secondary color */
+  --secondary-color: #cee68d;
+
+  /*   Change the font */
+  --font-family: "Inter", sans-serif;
+  /*   Change the chat background */
+  --background-color: #ededed;
+  --text-color-left: white;
+  --text-color-right: #001011;
+}
+
+/* If you want a different font, import it and change the --font-family */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.lpc_desktop.lpc_maximized-header,
+.lpc_desktop.lpc_minimized-header {
+  background: var(--primary-color) !important;
+}
+
+img.lp_image.lpc_hero-image-area__image.lpc_hero-image-area__image_maximized.lpc_desktop,
+.lp-json-pollock-layout.lp-json-pollock-layout-vertical.lpc_card.lpc_card_vertical.lpc_desktop {
+  background: var(--primary-color) !important;
+}
+
+.lp_maximized.lpmx.lpc_window.lpc_window_maximized.lpc_desktop.lp_floating.lp_maximized_large
+  * {
+  font-family: var(--font-family) !important;
+  border: none !important;
+  color: var(--text-color-right);
+}
+
+.lpc_message_agent {
+  background-color: var(--primary-color) !important;
+}
+
+.lp_mobile .lp-window-root > .lp_maximized,
+.lp_tablet .lp-window-root > .lp_maximized,
+.lp_desktop .lp-window-root > .lp_maximized {
+  filter: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.25));
+}
+
+.lp_bottom_area.lp_attachment_icon.lp_emoji_supported.lp_menu_top {
+  background: var(--primary-color) !important;
+}
+.lp_transcript_widget.lp_lpview_widgetContent.transcript_scroll {
+  background-color: var(--background-color) !important;
+}
+img.lpc_maximized-header__minimize-button-asset.lpc_desktop {
+  pointer-events: none;
+}
+.lp-json-pollock-element-button button {
+  color: var(--text-color-right) !important;
+  background: #6ccff6 !important;
+  border-radius: 6px !important;
+  padding: 4px !important;
+  margin: 4px 0 !important;
+  min-height: initial !important;
+}
+
+.lp_bottom_area.lp_attachment_icon.lp_emoji_supported.lp_menu_top svg path {
+  fill: var(--text-color-left) !important;
+}
+.lp_desktop .lp-window-root > .lp_maximized_large {
+  right: 0 !important;
+}
+.lp_bottom_area.lp_attachment_icon.lp_emoji_supported.lp_menu_top
+  textarea.lpview_form_textarea.lpc_composer__text-area.lpc_desktop.lp_expandable_textarea.lp_ltr,
+.lp-json-pollock-element-text.lpc_card__text.lpc_desktop span {
+  color: var(--text-color-left) !important;
+}
+.lp_location_center {
+  height: calc(100% - 38px) !important;
+}
+.lp-json-pollock-layout.lp-json-pollock-layout-vertical.lpc_card.lpc_card_vertical.lpc_desktop {
+  padding: 8px !important;
+  max-width: initial !important;
+}
+.lpc_message_agent .lp_title_text.lpc_message__text.lpc_message__text_agent {
+  color: var(--text-color-left) !important;
+}
+
+.lp-window-root .lp_chat_line_wrapper.lp_visitor .lp_new_chat_line {
+  border: 1px var(--secondary-color) solid !important;
+  background-color: var(--secondary-color) !important;
+}
+
+span.lp_title_text.lpc_message__text.lpc_message__text_visitor.lpc_desktop,
+.lp_time.lpc_message-area__timestamp.lpc_message-area__timestamp_visitor.lpc_desktop {
+  color: var(--text-color-right) !important;
+}
+.lp-window-root .lp_chat_line_wrapper .lp_rich_content_line,
+.lp-window-root .lp_chat_line_wrapper .lp_maven_payment_line {
+  width: 70% !important;
+}
+.lp-window-root
+  .lp_chat_line_wrapper
+  .lp_rich_content_line
+  .lp_title_text
+  .lp-json-pollock
+  .lp-json-pollock-element-text {
+  padding: 0;
+  text-align: center !important;
+  color: var(--text-color-left);
+}
