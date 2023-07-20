@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebSocket Example</title>
+  </head>
+  <body>
+    <h1>WebSocket Example</h1>
+    <div id="output"></div>
+
+    <script>
+
+
+      // see this url for the node version
+      // https://stackblitz.com/edit/node-1srepj?file=lpapp.js,lpapp2.js
+
+      // 3. request a new conversation
+      function requestNewConversation(ws) {
+        console.log("send new req");
+        var obj = {
+          kind: "req",
+          id: 1,
+          type: "cm.ConsumerRequestConversation",
+        };
+        ws.send(JSON.stringify(obj));
+      }
+
+      // 4. publish content to a conversation
+      function sendFirstMessage(ws, conversation_id) {
+        console.log("send first message");
+        var obj = {
+          kind: "req",
+          id: 2,
+          type: "ms.PublishEvent",
+          body: {
+            dialogId: conversation_id,
+            event: {
+              type: "ContentEvent",
+              contentType: "text/plain",
+              message: "My first message",
+            },
+          },
+        };
+        ws.send(JSON.stringify(obj));
+      }
+
+      function makeAjaxCall() {
+        const xhr = new XMLHttpRequest();
+
+        // Configure the AJAX request
+        xhr.open(
+          "POST",
+          "https://va.idp.liveperson.net/api/account/13350576/signup",
+          true
+        );
+
+        // Set up a callback function to handle the response
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              // Request successful, process the response
+              const response = xhr.responseText;
+              showMessage(response);
+              connectToLP(JSON.parse(response).jwt);
+            } else {
+              // Request failed, display an error message
+              showMessage("Error: " + xhr.status);
+            }
+          }
+        };
+
+        // Send the AJAX request
+        xhr.send();
+      }
+
+      // Function to display messages in the "output" div
+      function showMessage(message) {
+        const outputDiv = document.getElementById("output");
+        const newMessage = document.createElement("p");
+        newMessage.textContent = message;
+        outputDiv.appendChild(newMessage);
+      }
+
+      const CONNECTED = "Connection initialized successfully";
+      const REQUEST_CONVERSATION_RESPONSE = "cm.RequestConversationResponse";
+
+      var jwtOptions = {
+        method: "POST",
+        url: "https://va.idp.liveperson.net/api/account/13350576/signup",
+        headers: {},
+      };
+
+      makeAjaxCall();
+
+      function connectToLP(jwt) {
+        showMessage("jwt is " + jwt);
+        jwt = 'eyJraWQiOiIwMDAwMSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIwZTExNDZhYWYzZmM1MWU4MzgyYjdhNGNlNmU5MWE1YTNiMWU2OTAxZDBiZjQxYzZlMjA2YmJmYmE2NGI1NmE0IiwiYXVkIjoiYWNjOjM0NDQ4MjA2IiwiaXNzIjoiaHR0cHM6XC9cL2lkcC5saXZlcGVyc29uLm5ldCIsImxwLmV4dCI6eyJzdWIiOiIxMTExMTEiLCJpc3MiOiJodHRwczpcL1wvcG5jLmNvbSIsImxwX3NkZXMiOiJlMmY3OTU4YmI2NTdkYWM4YTJjY2IwYTU4Y2I0ZGRiNGExMGI1NjAwMjg5OTJlZDYzYTllZmI2N2YxOTAyZWE1NTU1ZWQwMmI4MzljMGJlNWJjYjIxOTE0MWU4Zjg5MGUzZTQyZGIzMTQ1Yjg0MWRkZGMwNjBmZTQyMTg3ZDgzNzEwN2ZhMjY1MmU0YTM4YTRmZDNjZDY1MTE2ZGZkMDJiNjNlMTA4YjhkYjAyZWQwMjRkOWQyY2Y5MzkwMTk5ZjIzMjUwMDVkMDc2YTc3OWFmNTUxOTJkZmFlZjZjYTg0NjEyMWRkZmVjYTQyODgzY2U2NDE4M2RkMmY4ZjcyNTkwIn0sImV4cCI6MTY4OTc5MTIzNSwiaWF0IjoxNjg5NzkwMjQ1fQ.LMfSOc5PCird1OU0fbck1WkWQSyIamjxfit2NnIyBhNPG-QXRjpwH8smAFr3lTOgecV4L8kwBIIOFpYJc-ORNKedb1mz1xiOb7oX3nIDO7CvzSp5fP6axB8tSy4_WHvzlKkvWoGh17Em2OTZlwimwMXLDAdvhp23jJjau-d85DWwgBfys4phFrA8WZnvESZIemJ8KALXfWlO8Xc1Yt5mzKR11P0PLFave4ITC3rkWySqYZTS5UyFuJoRwk1J5dhJEiFCC1wWuYzthv28qmiAo4XqCINBU9MjDKX8vzG7LdCa12V7zRgEihrDw9c6-vRhqBfiC9eyx8EzzKrZYrlLvw';
+        // jwt = 'eyJraWQiOiIwMDAwMSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4Y2ZhM2Y3Ni0yZDJkLTRhZjItYmE4Yy1lYjE4MzFkN2I1MGUiLCJhdWQiOiJhY2M6MTMzNTA1NzYiLCJpc3MiOiJodHRwczpcL1wvaWRwLmxpdmVwZXJzb24ubmV0IiwiZXhwIjoyMTAwMTAyMjgyLCJpYXQiOjE2ODk4NjIyNDIsImp0aSI6IjcwZGNhMjliLTYxMjAtNGMwZS04ODZmLTU1Yzk2YWZmNWMzZCJ9.S8xaREOTCuozSBXnfpffySRHqUWRF1-CbML5vY-ugzHwbfu6I0QtRXGa8wHgZSWM_g9xZX_OD6o-3IYw3Ym8QEAbddqENGqWkq-2eCKtK2iIwozmYRSUXcKjqNiXsyNd1WbJlFtX4wpsbdBv-vVY9hDVXaI9cu-5H2YepsYPqCQadfW1eeSNXubb-cuYBPr2HuAl3_sGKK7rmv9bCZvITxSOA8beirs0EuNyFJPFDWb5jVPYe777-przrccYUTOpS4i6dvI0ibjSqF0hUuptW6-rrc5HfOReec1_IWaAQb-Y6nXAOq1O-lXe5hg4Vx-YiyiY9NNh25CQNI5KVH17_Q';
+        // Create WebSocket connection
+        const wsurl =
+          "wss://va.msg.liveperson.net/ws_api/account/13350576/messaging/consumer?v=3";
+        const wsoptions = { headers: { Authorization: jwt } };
+
+        const headers = {
+          Authorization: jwt,
+          "Custom-Header": "Custom Value",
+          // Add any additional headers you want to send with the connection request
+        };
+
+        const urlWithHeaders = Object.keys(headers).reduce((acc, key) => {
+          return (
+            acc +
+            (acc.indexOf("?") === -1 ? "?" : "&") +
+            key +
+            "=" +
+            encodeURIComponent(headers[key])
+          );
+        }, wsurl);
+
+        const socket = new WebSocket(urlWithHeaders);
+
+        // const ws = new WebSocket(wsurl, {}, wsoptions);
+        // const socket = new WebSocket(wsurl, {}, wsoptions);
+
+        // WebSocket onopen event
+        socket.onopen = (event) => {
+          showMessage("WebSocket connection established!" + jwt);
+          var obj = {
+            kind: "req",
+            id: "0",
+            type: "InitConnection",
+            headers: [
+              {
+                type: ".ams.headers.ClientProperties",
+                deviceFamily: "MOBILE",
+                os: "ANDROID",
+              },
+              { type: ".ams.headers.ConsumerAuthentication", jwt: jwt },
+            ],
+          };
+
+          var str = JSON.stringify(obj);
+          console.log(str);
+          socket.send(str);
+        };
+
+        // WebSocket onmessage event
+        socket.onmessage = (event) => {
+          showMessage("Received message: " + event.data);
+          const obj = JSON.parse(event.data);
+          console.log(obj.body);
+          if (obj.body === CONNECTED) {
+            requestNewConversation(socket);
+          } else if (obj.type === REQUEST_CONVERSATION_RESPONSE) {
+            sendFirstMessage(socket, obj.body.conversationId);
+          }
+        };
+
+        // WebSocket onclose event
+        socket.onclose = (event) => {
+          showMessage("WebSocket connection closed!");
+        };
+
+        // WebSocket onerror event
+        socket.onerror = (event) => {
+          showMessage("WebSocket error: " + event.error);
+        };
+      }
+
+      // Function to send a message through WebSocket
+      function sendMessage() {
+        const messageInput = document.getElementById("messageInput");
+        const message = messageInput.value;
+        socket.send(message);
+        messageInput.value = "";
+      }
+    </script>
+
+    <h2>Send a Message</h2>
+    <input type="text" id="messageInput" />
+    <button onclick="sendMessage()">Send</button>
+  </body>
+</html>
