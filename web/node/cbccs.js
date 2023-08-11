@@ -1,10 +1,80 @@
 // utility app to search cb ccs for convos
-require('dotenv').config();
+require("dotenv").config();
 var request = require("request");
 const readline = require("readline");
 const fs = require("fs");
 
-var zero = one = two = three = four = five = 0;
+class CBResultSet {
+  constructor(name, age) {
+    this.zero = 0;
+    this.one = 0;
+    this.two = 0;
+    this.three = 0;
+    this.four = 0;
+    this.five = 0;
+    this.age = age;
+    this.oneArray = [];
+    this.twoArray = [];
+    this.threeArray = [];
+    this.fourArray = [];
+    this.fiveArray = [];
+    this.filePath = 'output.txt';
+
+  }
+
+  addToSet(convId, numberOfElements){
+    if (numberOfElements == 0) {
+      this.zero++;
+    } else if (numberOfElements == 5) {
+      this.five++;
+      this.fiveArray.push(convId);
+    } else if (numberOfElements == 4) {
+      this.four++;
+      this.fourArray.push(convId);
+    } else if (numberOfElements == 3) {
+      this.three++;
+      this.threeArray.push(convId);
+    } else if (numberOfElements == 2) {
+      this.two++;
+      this.twoArray.push(convId);
+    } else if (numberOfElements == 1) {
+      this.one++;
+      this.oneArray.push(convId);
+    }
+  }
+
+  addToOne(convId){
+    this.oneArray.push(convId);
+  }
+  sayHello() {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+  }
+
+  writeResult(){
+    let contentToWrite = 'Hello, this is some content to write to a file!\n';
+    contentToWrite = contentToWrite + "Element count " + this.one + "\n";
+    this.oneArray.forEach((item) => {
+      contentToWrite = contentToWrite + item + "\n";
+    });
+
+    fs.writeFile(this.filePath, contentToWrite, (err) => {
+      if (err) {
+        console.error('Error writing to file:', err);
+      } else {
+        console.log('Content has been written to the file successfully.');
+      }
+    });
+  }
+}
+
+const cbResultSet = new CBResultSet("Alice", 30);
+// cbResultSet.sayHello();
+// cbResultSet.addToOne("sdlfkj");
+// cbResultSet.addToOne("sdlfkj2");
+// cbResultSet.writeResult();
+var zero = (one = two = three = four = five = 0);
 
 // Replace 'your-file.txt' with the path to your file
 const filePath = "convoid.txt";
@@ -48,13 +118,15 @@ function processLine(convId) {
   });
 }
 
-function displayResult(){
+function displayResult() {
   console.log("zero count " + zero);
   console.log("five count " + five);
 }
 
 function processResult(convoId, result) {
   var { numberOfElements, resultObj } = countElements(result);
+
+  cbResultSet.addToSet(convoId, numberOfElements);
 
   console.log("Number of elements:", numberOfElements);
   if (resultObj.email) {
@@ -66,7 +138,6 @@ function processResult(convoId, result) {
 function countElements(result) {
   var resultObj = JSON.parse(result);
   const numberOfElements = Object.keys(resultObj).length;
-
 
   // checking all the scenarios
   // when case created = true, that means faas sent post to CB, nothing we can do
@@ -88,20 +159,4 @@ function countElements(result) {
     one++;
   }
   return { numberOfElements, resultObj };
-}
-
-class CBResultSet {
-  constructor(name, age) {
-    this.zero = 0;
-    this.zero = 0;
-    this.zero = 0;
-    this.zero = 0;
-    this.zero = 0;
-    this.name = name;
-    this.age = age;
-  }
-
-  sayHello() {
-    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
-  }
 }
