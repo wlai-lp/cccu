@@ -8,7 +8,12 @@
     <div id="output"></div>
 
     <script>
-
+      const pnc_prod = '10776660';
+      const pnc_dev = '34448206';
+      const wei_lp = '90412079';
+      // const _env = pnc_dev;
+      // const _env = pnc_prod;
+      const _env = wei_lp;
 
       // see this url for the node version
       // https://stackblitz.com/edit/node-1srepj?file=lpapp.js,lpapp2.js
@@ -49,7 +54,7 @@
         // Configure the AJAX request
         xhr.open(
           "POST",
-          "https://va.idp.liveperson.net/api/account/13350576/signup",
+          "https://va.idp.liveperson.net/api/account/" + _env + "/signup",
           true
         );
 
@@ -85,7 +90,7 @@
 
       var jwtOptions = {
         method: "POST",
-        url: "https://va.idp.liveperson.net/api/account/13350576/signup",
+        url: "https://va.idp.liveperson.net/api/account/" + _env + "/signup",
         headers: {},
       };
 
@@ -97,7 +102,7 @@
         // jwt = 'eyJraWQiOiIwMDAwMSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4Y2ZhM2Y3Ni0yZDJkLTRhZjItYmE4Yy1lYjE4MzFkN2I1MGUiLCJhdWQiOiJhY2M6MTMzNTA1NzYiLCJpc3MiOiJodHRwczpcL1wvaWRwLmxpdmVwZXJzb24ubmV0IiwiZXhwIjoyMTAwMTAyMjgyLCJpYXQiOjE2ODk4NjIyNDIsImp0aSI6IjcwZGNhMjliLTYxMjAtNGMwZS04ODZmLTU1Yzk2YWZmNWMzZCJ9.S8xaREOTCuozSBXnfpffySRHqUWRF1-CbML5vY-ugzHwbfu6I0QtRXGa8wHgZSWM_g9xZX_OD6o-3IYw3Ym8QEAbddqENGqWkq-2eCKtK2iIwozmYRSUXcKjqNiXsyNd1WbJlFtX4wpsbdBv-vVY9hDVXaI9cu-5H2YepsYPqCQadfW1eeSNXubb-cuYBPr2HuAl3_sGKK7rmv9bCZvITxSOA8beirs0EuNyFJPFDWb5jVPYe777-przrccYUTOpS4i6dvI0ibjSqF0hUuptW6-rrc5HfOReec1_IWaAQb-Y6nXAOq1O-lXe5hg4Vx-YiyiY9NNh25CQNI5KVH17_Q';
         // Create WebSocket connection
         const wsurl =
-          "wss://va.msg.liveperson.net/ws_api/account/13350576/messaging/consumer?v=3";
+          "wss://va.msg.liveperson.net/ws_api/account/" + _env + "/messaging/consumer?v=3";
         const wsoptions = { headers: { Authorization: jwt } };
 
         const headers = {
@@ -141,6 +146,21 @@
           var str = JSON.stringify(obj);
           console.log(str);
           socket.send(str);
+
+          // send 
+          // in classic UMS, this would failed because it's trying to process open before connect
+          // switched to UMS+ would resolve this issue
+          // but best practice is to wait for initconnect to complete before sending additional requests
+          var obj2 = {
+            body: { convState: ['OPEN'] },
+            id: '6799511991',
+            kind: 'req',
+            type: 'cqm.SubscribeExConversations',
+          };
+          var str2 = JSON.stringify(obj2);
+          console.log("str2 = " + str2)
+          socket.send(str2);
+
         };
 
         // WebSocket onmessage event
