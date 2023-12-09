@@ -1,0 +1,4004 @@
+{
+        "events": [
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701800091932,
+                    "originalTimeStamp": 1701800091932,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701800091932,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701964154317,
+                    "originalTimeStamp": 1701964154317,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701964154317,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701812411309,
+                    "originalTimeStamp": 1701812411309,
+                    "customerInfo": {
+                        "customerStatus": "77f296fb-8c2c-4940-82e4-1ace4423b403",
+                        "customerType": "wallet : transaction : incorrectamount",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "77f296fb-8c2c-4940-82e4-1ace4423b403",
+                        "companyBranch": "transaction_incorrectamount_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701812411309,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701877315604,
+                    "originalTimeStamp": 1701877315604,
+                    "customerInfo": {
+                        "customerStatus": "ccd52bb5-bc00-493c-8bad-a6a07cec2dbc",
+                        "customerType": "wallet : transaction : incorrectamount",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "ccd52bb5-bc00-493c-8bad-a6a07cec2dbc",
+                        "companyBranch": "transaction_incorrectamount_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701877315604,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701878990483,
+                    "originalTimeStamp": 1701878990483,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701878990483,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701882735458,
+                    "originalTimeStamp": 1701882735458,
+                    "customerInfo": {
+                        "customerStatus": "ee13a438-e95c-4d09-b985-6d496e0f84b2",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "ee13a438-e95c-4d09-b985-6d496e0f84b2",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701882735458,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701897702422,
+                    "originalTimeStamp": 1701897702422,
+                    "customerInfo": {
+                        "customerStatus": "27e84336-b56b-4796-bcf5-e476226b4610",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "27e84336-b56b-4796-bcf5-e476226b4610",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701897702422,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701801486927,
+                    "originalTimeStamp": 1701801486927,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701801486927,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701793021731,
+                    "originalTimeStamp": 1701793021731,
+                    "customerInfo": {
+                        "customerStatus": "727fc3ec-8ae7-4bc7-a179-9bfab6a53ce3",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "727fc3ec-8ae7-4bc7-a179-9bfab6a53ce3",
+                        "companyBranch": "transaction_help_textnotedited"
+                    }
+                },
+                "serverTimeStamp": 1701793021731,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701963823866,
+                    "originalTimeStamp": 1701963823866,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701963823866,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701879530531,
+                    "originalTimeStamp": 1701879530531,
+                    "customerInfo": {
+                        "customerStatus": "93564395-4551-417f-afe5-95ff7a491852",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "93564395-4551-417f-afe5-95ff7a491852",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701879530531,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701798038706,
+                    "originalTimeStamp": 1701798038706,
+                    "customerInfo": {
+                        "customerStatus": "1c9ebcf0-5d72-4922-b71e-b224d0763511",
+                        "customerType": "wallet : transaction : duplicate",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "1c9ebcf0-5d72-4922-b71e-b224d0763511",
+                        "companyBranch": "transaction_duplicate_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701798038706,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701807527777,
+                    "originalTimeStamp": 1701807527777,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701807527777,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701898140933,
+                    "originalTimeStamp": 1701898140933,
+                    "customerInfo": {
+                        "customerStatus": "525d8627-e270-4c4f-9a8e-18aa213c7606",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "525d8627-e270-4c4f-9a8e-18aa213c7606",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701898140933,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701880820264,
+                    "originalTimeStamp": 1701880820264,
+                    "customerInfo": {
+                        "customerStatus": "52e4215a-5492-47c7-ac52-b5d38794dc68",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "52e4215a-5492-47c7-ac52-b5d38794dc68",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701880820264,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701876222700,
+                    "originalTimeStamp": 1701876222700,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701876222700,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701981146001,
+                    "originalTimeStamp": 1701981146001,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701981146001,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701793781930,
+                    "originalTimeStamp": 1701793781930,
+                    "customerInfo": {
+                        "customerStatus": "4035c8ac-683e-4ee4-b76c-0a9ecb06e8ac",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "4035c8ac-683e-4ee4-b76c-0a9ecb06e8ac",
+                        "companyBranch": "transaction_help_textnotedited"
+                    }
+                },
+                "serverTimeStamp": 1701793781930,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701965154327,
+                    "originalTimeStamp": 1701965154327,
+                    "customerInfo": {
+                        "customerStatus": "7be56bdb-6e23-45b7-997b-1b0498099eba",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "7be56bdb-6e23-45b7-997b-1b0498099eba",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701965154327,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701798038706,
+                    "originalTimeStamp": 1701798038706,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701798038706,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701887622097,
+                    "originalTimeStamp": 1701887622097,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701887622097,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701897702422,
+                    "originalTimeStamp": 1701897702422,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701897702422,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701878288417,
+                    "originalTimeStamp": 1701878288417,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701878288417,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701882289360,
+                    "originalTimeStamp": 1701882289360,
+                    "customerInfo": {
+                        "customerStatus": "d743b729-9c27-45a7-850d-d3f07ad71694",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "d743b729-9c27-45a7-850d-d3f07ad71694",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701882289360,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701962174516,
+                    "originalTimeStamp": 1701962174516,
+                    "customerInfo": {
+                        "customerStatus": "b50f5129-b84d-4bd2-a287-a838c8d41bca",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "b50f5129-b84d-4bd2-a287-a838c8d41bca",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701962174516,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701963100212,
+                    "originalTimeStamp": 1701963100212,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701963100212,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701886960315,
+                    "originalTimeStamp": 1701886960315,
+                    "customerInfo": {
+                        "customerStatus": "5fd514d8-8478-4364-9bd3-6adef4cf7ada",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "5fd514d8-8478-4364-9bd3-6adef4cf7ada",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701886960315,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701795242048,
+                    "originalTimeStamp": 1701795242048,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701795242048,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701881550187,
+                    "originalTimeStamp": 1701881550187,
+                    "customerInfo": {
+                        "customerStatus": "5e46ec5f-a288-4a7c-b8ac-ca9c6cfc6265",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "5e46ec5f-a288-4a7c-b8ac-ca9c6cfc6265",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701881550187,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701878828611,
+                    "originalTimeStamp": 1701878828611,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701878828611,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701971137213,
+                    "originalTimeStamp": 1701971137213,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701971137213,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701898314306,
+                    "originalTimeStamp": 1701898314306,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701898314306,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701801364674,
+                    "originalTimeStamp": 1701801364674,
+                    "customerInfo": {
+                        "customerStatus": "525d8627-e270-4c4f-9a8e-18aa213c7606",
+                        "customerType": "wallet : transaction : canceled",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "525d8627-e270-4c4f-9a8e-18aa213c7606",
+                        "companyBranch": "transaction_canceled"
+                    }
+                },
+                "serverTimeStamp": 1701801364674,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701898914700,
+                    "originalTimeStamp": 1701898914700,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701898914700,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701961014478,
+                    "originalTimeStamp": 1701961014478,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701961014478,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701887622097,
+                    "originalTimeStamp": 1701887622097,
+                    "customerInfo": {
+                        "customerStatus": "8a264f39-0317-4a7c-8afd-71a42917806e",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "8a264f39-0317-4a7c-8afd-71a42917806e",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701887622097,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701900966112,
+                    "originalTimeStamp": 1701900966112,
+                    "customerInfo": {
+                        "customerStatus": "1281a5f3-6692-4f77-9775-65f7202725e3",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "1281a5f3-6692-4f77-9775-65f7202725e3",
+                        "companyBranch": "transaction_help_textnotedited"
+                    }
+                },
+                "serverTimeStamp": 1701900966112,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701792141897,
+                    "originalTimeStamp": 1701792141897,
+                    "customerInfo": {
+                        "customerStatus": "727fc3ec-8ae7-4bc7-a179-9bfab6a53ce3",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "727fc3ec-8ae7-4bc7-a179-9bfab6a53ce3",
+                        "companyBranch": "transaction_help"
+                    }
+                },
+                "serverTimeStamp": 1701792141897,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701964979949,
+                    "originalTimeStamp": 1701964979949,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701964979949,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701886610221,
+                    "originalTimeStamp": 1701886610221,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701886610221,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701887115778,
+                    "originalTimeStamp": 1701887115778,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701887115778,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701977963922,
+                    "originalTimeStamp": 1701977963922,
+                    "customerInfo": {
+                        "customerStatus": "f6b6333f-affe-44a8-b62d-f3c9c21e584e",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "f6b6333f-affe-44a8-b62d-f3c9c21e584e",
+                        "companyBranch": "guided_flow"
+                    }
+                },
+                "serverTimeStamp": 1701977963922,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701980219229,
+                    "originalTimeStamp": 1701980219229,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701980219229,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701878833420,
+                    "originalTimeStamp": 1701878833420,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701878833420,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701882066291,
+                    "originalTimeStamp": 1701882066291,
+                    "customerInfo": {
+                        "customerStatus": "6065ff48-1d64-48c3-bf30-d551222cd838",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "6065ff48-1d64-48c3-bf30-d551222cd838",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701882066291,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701883149930,
+                    "originalTimeStamp": 1701883149930,
+                    "customerInfo": {
+                        "customerStatus": "e4ab21ab-d437-4358-b69f-5e0470da3317",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "e4ab21ab-d437-4358-b69f-5e0470da3317",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701883149930,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701798700095,
+                    "originalTimeStamp": 1701798700095,
+                    "customerInfo": {
+                        "customerStatus": "fd83d10d-6c94-468a-bf75-b69c99677150",
+                        "customerType": "wallet : transaction : canceled",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "fd83d10d-6c94-468a-bf75-b69c99677150",
+                        "companyBranch": "transaction_canceled_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701798700095,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701798955434,
+                    "originalTimeStamp": 1701798955434,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701798955434,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701812411309,
+                    "originalTimeStamp": 1701812411309,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701812411309,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701882939782,
+                    "originalTimeStamp": 1701882939782,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701882939782,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701881306518,
+                    "originalTimeStamp": 1701881306518,
+                    "customerInfo": {
+                        "customerStatus": "4b64749c-ed98-4a39-9430-22931178d4bc",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "4b64749c-ed98-4a39-9430-22931178d4bc",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701881306518,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701792141897,
+                    "originalTimeStamp": 1701792141897,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701792141897,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701877976532,
+                    "originalTimeStamp": 1701877976532,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701877976532,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701963319586,
+                    "originalTimeStamp": 1701963319586,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701963319586,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701965338138,
+                    "originalTimeStamp": 1701965338138,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701965338138,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701888559815,
+                    "originalTimeStamp": 1701888559815,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701888559815,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701960728751,
+                    "originalTimeStamp": 1701960728751,
+                    "customerInfo": {
+                        "customerStatus": "5880b75a-89db-46df-9790-04a2b29fce6d",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "5880b75a-89db-46df-9790-04a2b29fce6d",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701960728751,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701879747450,
+                    "originalTimeStamp": 1701879747450,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701879747450,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701880534569,
+                    "originalTimeStamp": 1701880534569,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701880534569,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701799385807,
+                    "originalTimeStamp": 1701799385807,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701799385807,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701960438254,
+                    "originalTimeStamp": 1701960438254,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701960438254,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701879294363,
+                    "originalTimeStamp": 1701879294363,
+                    "customerInfo": {
+                        "customerStatus": "d4b502d9-261c-4b1c-b4b4-98e0f64c5e8c",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "d4b502d9-261c-4b1c-b4b4-98e0f64c5e8c",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701879294363,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701879530531,
+                    "originalTimeStamp": 1701879530531,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701879530531,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701961705366,
+                    "originalTimeStamp": 1701961705366,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701961705366,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701882939782,
+                    "originalTimeStamp": 1701882939782,
+                    "customerInfo": {
+                        "customerStatus": "ff31eef5-da54-4bc6-a038-b2acc156b69c",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "ff31eef5-da54-4bc6-a038-b2acc156b69c",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701882939782,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701875203314,
+                    "originalTimeStamp": 1701875203314,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701875203314,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701986792123,
+                    "originalTimeStamp": 1701986792123,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701986792123,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701887798394,
+                    "originalTimeStamp": 1701887798394,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701887798394,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701801486927,
+                    "originalTimeStamp": 1701801486927,
+                    "customerInfo": {
+                        "customerStatus": "38a413a0-dc1c-4bae-b009-751caadb6ce1",
+                        "customerType": "wallet : transaction : unauthorized",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "38a413a0-dc1c-4bae-b009-751caadb6ce1",
+                        "companyBranch": "transaction_unauthorized"
+                    }
+                },
+                "serverTimeStamp": 1701801486927,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701877548170,
+                    "originalTimeStamp": 1701877548170,
+                    "customerInfo": {
+                        "customerStatus": "ac7c1ce5-2633-43f4-8c39-332976ffed47",
+                        "customerType": "wallet : transaction : duplicate",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "ac7c1ce5-2633-43f4-8c39-332976ffed47",
+                        "companyBranch": "transaction_duplicate_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701877548170,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701802322810,
+                    "originalTimeStamp": 1701802322810,
+                    "customerInfo": {
+                        "customerStatus": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "customerType": "wallet : transaction : otherissue",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "companyBranch": "transaction_otherissue"
+                    }
+                },
+                "serverTimeStamp": 1701802322810,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701890244023,
+                    "originalTimeStamp": 1701890244023,
+                    "customerInfo": {
+                        "customerStatus": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "companyBranch": "transaction_help_textedited"
+                    }
+                },
+                "serverTimeStamp": 1701890244023,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701878833420,
+                    "originalTimeStamp": 1701878833420,
+                    "customerInfo": {
+                        "customerStatus": "fc3b6340-197f-4f7e-a185-f8457a2d29f9",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "AUTH_NOT_SUPPORTED",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "fc3b6340-197f-4f7e-a185-f8457a2d29f9",
+                        "companyBranch": "transaction_help_textnotedited"
+                    }
+                },
+                "serverTimeStamp": 1701878833420,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701889170894,
+                    "originalTimeStamp": 1701889170894,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701889170894,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701880121079,
+                    "originalTimeStamp": 1701880121079,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701880121079,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701880534569,
+                    "originalTimeStamp": 1701880534569,
+                    "customerInfo": {
+                        "customerStatus": "9bf956af-3101-467f-a150-1cb2d4a74d3a",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "9bf956af-3101-467f-a150-1cb2d4a74d3a",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701880534569,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701898687856,
+                    "originalTimeStamp": 1701898687856,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701898687856,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701978320386,
+                    "originalTimeStamp": 1701978320386,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701978320386,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701799385807,
+                    "originalTimeStamp": 1701799385807,
+                    "customerInfo": {
+                        "customerStatus": "f9ae25f3-8b09-4b89-b5ff-ec64eb0e7a7e",
+                        "customerType": "wallet : transaction : incorrectamount",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "f9ae25f3-8b09-4b89-b5ff-ec64eb0e7a7e",
+                        "companyBranch": "dispute_manage"
+                    }
+                },
+                "serverTimeStamp": 1701799385807,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701801635415,
+                    "originalTimeStamp": 1701801635415,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701801635415,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701875203314,
+                    "originalTimeStamp": 1701875203314,
+                    "customerInfo": {
+                        "customerStatus": "d98405be-ad84-45d0-9333-451a167dabfe",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "d98405be-ad84-45d0-9333-451a167dabfe",
+                        "companyBranch": "transaction_incorrectamount_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701875203314,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701882516917,
+                    "originalTimeStamp": 1701882516917,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701882516917,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701964154317,
+                    "originalTimeStamp": 1701964154317,
+                    "customerInfo": {
+                        "customerStatus": "d0c23671-5c34-4840-add8-862dd8d296fa",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "d0c23671-5c34-4840-add8-862dd8d296fa",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701964154317,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701883857068,
+                    "originalTimeStamp": 1701883857068,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701883857068,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701886776496,
+                    "originalTimeStamp": 1701886776496,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701886776496,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701797450383,
+                    "originalTimeStamp": 1701797450383,
+                    "customerInfo": {
+                        "customerStatus": "85fef678-7021-4d66-805c-d7afd14e61cc",
+                        "customerType": "wallet : transaction : incorrectamount",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "85fef678-7021-4d66-805c-d7afd14e61cc",
+                        "companyBranch": "transaction_incorrectamount_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701797450383,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701875354693,
+                    "originalTimeStamp": 1701875354693,
+                    "customerInfo": {
+                        "customerStatus": "d98405be-ad84-45d0-9333-451a167dabfe",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "d98405be-ad84-45d0-9333-451a167dabfe",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701875354693,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701882735458,
+                    "originalTimeStamp": 1701882735458,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701882735458,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701886960315,
+                    "originalTimeStamp": 1701886960315,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701886960315,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701981146001,
+                    "originalTimeStamp": 1701981146001,
+                    "customerInfo": {
+                        "customerStatus": "c89fe3ad-a8fd-445f-9951-d6a531f6ab9c",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "c89fe3ad-a8fd-445f-9951-d6a531f6ab9c",
+                        "companyBranch": "transaction_help_textnotedited"
+                    }
+                },
+                "serverTimeStamp": 1701981146001,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701898314306,
+                    "originalTimeStamp": 1701898314306,
+                    "customerInfo": {
+                        "customerStatus": "f9ae25f3-8b09-4b89-b5ff-ec64eb0e7a7e",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "f9ae25f3-8b09-4b89-b5ff-ec64eb0e7a7e",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701898314306,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701977963922,
+                    "originalTimeStamp": 1701977963922,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701977963922,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701876222700,
+                    "originalTimeStamp": 1701876222700,
+                    "customerInfo": {
+                        "customerStatus": "6a87b4b8-bc77-4494-b564-9a1724d08dab",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "6a87b4b8-bc77-4494-b564-9a1724d08dab",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701876222700,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701883857068,
+                    "originalTimeStamp": 1701883857068,
+                    "customerInfo": {
+                        "customerStatus": "63de1226-6ae9-4e8f-ae91-e5dcc27a84c3",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "63de1226-6ae9-4e8f-ae91-e5dcc27a84c3",
+                        "companyBranch": "transaction_help_textnotedited"
+                    }
+                },
+                "serverTimeStamp": 1701883857068,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701960231002,
+                    "originalTimeStamp": 1701960231002,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701960231002,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701886610221,
+                    "originalTimeStamp": 1701886610221,
+                    "customerInfo": {
+                        "customerStatus": "9ecd4e43-abf0-405a-aff9-910ef41b8a21",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "9ecd4e43-abf0-405a-aff9-910ef41b8a21",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701886610221,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701900966112,
+                    "originalTimeStamp": 1701900966112,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701900966112,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701878828611,
+                    "originalTimeStamp": 1701878828611,
+                    "customerInfo": {
+                        "customerStatus": "fc3b6340-197f-4f7e-a185-f8457a2d29f9",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "fc3b6340-197f-4f7e-a185-f8457a2d29f9",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701878828611,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701881101030,
+                    "originalTimeStamp": 1701881101030,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701881101030,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701886776496,
+                    "originalTimeStamp": 1701886776496,
+                    "customerInfo": {
+                        "customerStatus": "4641883d-be61-4181-864e-c624c4f7f3da",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "4641883d-be61-4181-864e-c624c4f7f3da",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701886776496,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701890244023,
+                    "originalTimeStamp": 1701890244023,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701890244023,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701882516917,
+                    "originalTimeStamp": 1701882516917,
+                    "customerInfo": {
+                        "customerStatus": "5a484d4a-4ca9-4964-b234-88c6ba1c746b",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "5a484d4a-4ca9-4964-b234-88c6ba1c746b",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701882516917,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701798955434,
+                    "originalTimeStamp": 1701798955434,
+                    "customerInfo": {
+                        "customerStatus": "f9ae25f3-8b09-4b89-b5ff-ec64eb0e7a7e",
+                        "customerType": "wallet : transaction : incorrectamount",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "f9ae25f3-8b09-4b89-b5ff-ec64eb0e7a7e",
+                        "companyBranch": "transaction_incorrectamount"
+                    }
+                },
+                "serverTimeStamp": 1701798955434,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701889912282,
+                    "originalTimeStamp": 1701889912282,
+                    "customerInfo": {
+                        "customerStatus": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701889912282,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701898687856,
+                    "originalTimeStamp": 1701898687856,
+                    "customerInfo": {
+                        "customerStatus": "5184e674-e533-4021-afc7-090ba2671942",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "5184e674-e533-4021-afc7-090ba2671942",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701898687856,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701963823866,
+                    "originalTimeStamp": 1701963823866,
+                    "customerInfo": {
+                        "customerStatus": "7e8c06ee-7d00-4662-ae41-867d2b7f0e46",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "7e8c06ee-7d00-4662-ae41-867d2b7f0e46",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701963823866,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701986792123,
+                    "originalTimeStamp": 1701986792123,
+                    "customerInfo": {
+                        "customerStatus": "cd297074-fca3-4c04-b63a-fdf1f037be1b",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "cd297074-fca3-4c04-b63a-fdf1f037be1b",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701986792123,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701889912282,
+                    "originalTimeStamp": 1701889912282,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701889912282,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701881815963,
+                    "originalTimeStamp": 1701881815963,
+                    "customerInfo": {
+                        "customerStatus": "1e55ed6f-c3e1-4cc6-8c26-c7a027f8d324",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "1e55ed6f-c3e1-4cc6-8c26-c7a027f8d324",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701881815963,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701965154327,
+                    "originalTimeStamp": 1701965154327,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701965154327,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701895640842,
+                    "originalTimeStamp": 1701895640842,
+                    "customerInfo": {
+                        "customerStatus": "38a413a0-dc1c-4bae-b009-751caadb6ce1",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "38a413a0-dc1c-4bae-b009-751caadb6ce1",
+                        "companyBranch": "transaction_help_textedited"
+                    }
+                },
+                "serverTimeStamp": 1701895640842,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701879747450,
+                    "originalTimeStamp": 1701879747450,
+                    "customerInfo": {
+                        "customerStatus": "474bdef0-513d-4bc9-b750-4289507ce022",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "474bdef0-513d-4bc9-b750-4289507ce022",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701879747450,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701895640842,
+                    "originalTimeStamp": 1701895640842,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701895640842,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701898140933,
+                    "originalTimeStamp": 1701898140933,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701898140933,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701882289360,
+                    "originalTimeStamp": 1701882289360,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701882289360,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701878493665,
+                    "originalTimeStamp": 1701878493665,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701878493665,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701897199682,
+                    "originalTimeStamp": 1701897199682,
+                    "customerInfo": {
+                        "customerStatus": "38a413a0-dc1c-4bae-b009-751caadb6ce1",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "38a413a0-dc1c-4bae-b009-751caadb6ce1",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701897199682,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701798407709,
+                    "originalTimeStamp": 1701798407709,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701798407709,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701800983659,
+                    "originalTimeStamp": 1701800983659,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701800983659,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701801364674,
+                    "originalTimeStamp": 1701801364674,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701801364674,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701960728751,
+                    "originalTimeStamp": 1701960728751,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701960728751,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701896762821,
+                    "originalTimeStamp": 1701896762821,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701896762821,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701879294363,
+                    "originalTimeStamp": 1701879294363,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701879294363,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701886358751,
+                    "originalTimeStamp": 1701886358751,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701886358751,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701960438254,
+                    "originalTimeStamp": 1701960438254,
+                    "customerInfo": {
+                        "customerStatus": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701960438254,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701878493665,
+                    "originalTimeStamp": 1701878493665,
+                    "customerInfo": {
+                        "customerStatus": "fc3b6340-197f-4f7e-a185-f8457a2d29f9",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "fc3b6340-197f-4f7e-a185-f8457a2d29f9",
+                        "companyBranch": "transaction_canceled_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701878493665,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701961444467,
+                    "originalTimeStamp": 1701961444467,
+                    "customerInfo": {
+                        "customerStatus": "b96fb8b7-35cc-4f87-8190-569834a80b17",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "b96fb8b7-35cc-4f87-8190-569834a80b17",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701961444467,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701961705366,
+                    "originalTimeStamp": 1701961705366,
+                    "customerInfo": {
+                        "customerStatus": "ef265f45-4096-40b3-9b0e-c25dd14f240e",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "ef265f45-4096-40b3-9b0e-c25dd14f240e",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701961705366,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701798407709,
+                    "originalTimeStamp": 1701798407709,
+                    "customerInfo": {
+                        "customerStatus": "caf43fb5-9e30-4457-916b-9b192108515c",
+                        "customerType": "wallet : transaction : damagedorreturned",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "caf43fb5-9e30-4457-916b-9b192108515c",
+                        "companyBranch": "transaction_damagedorreturned_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701798407709,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701793021731,
+                    "originalTimeStamp": 1701793021731,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701793021731,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701877976532,
+                    "originalTimeStamp": 1701877976532,
+                    "customerInfo": {
+                        "customerStatus": "3e0d7471-62d9-49c1-a6f8-1e2977cf185e",
+                        "customerType": "wallet : transaction : damagedorreturned",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "3e0d7471-62d9-49c1-a6f8-1e2977cf185e",
+                        "companyBranch": "transaction_damagedorreturned_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701877976532,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701961014478,
+                    "originalTimeStamp": 1701961014478,
+                    "customerInfo": {
+                        "customerStatus": "9f77e9ff-0712-406b-beac-a3fbce288240",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "9f77e9ff-0712-406b-beac-a3fbce288240",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701961014478,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701882066291,
+                    "originalTimeStamp": 1701882066291,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701882066291,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701961233024,
+                    "originalTimeStamp": 1701961233024,
+                    "customerInfo": {
+                        "customerStatus": "f8eedcc9-4c1d-4ca5-807b-4c7749f9c93d",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "f8eedcc9-4c1d-4ca5-807b-4c7749f9c93d",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701961233024,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701888014290,
+                    "originalTimeStamp": 1701888014290,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701888014290,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701877315604,
+                    "originalTimeStamp": 1701877315604,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701877315604,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701801155537,
+                    "originalTimeStamp": 1701801155537,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701801155537,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701887115778,
+                    "originalTimeStamp": 1701887115778,
+                    "customerInfo": {
+                        "customerStatus": "0aeb4c9b-21d8-486d-a868-42f086456ce7",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "0aeb4c9b-21d8-486d-a868-42f086456ce7",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701887115778,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701959889956,
+                    "originalTimeStamp": 1701959889956,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701959889956,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701980219229,
+                    "originalTimeStamp": 1701980219229,
+                    "customerInfo": {
+                        "customerStatus": "f6b6333f-affe-44a8-b62d-f3c9c21e584e",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "f6b6333f-affe-44a8-b62d-f3c9c21e584e",
+                        "companyBranch": "transaction_help_textnotedited"
+                    }
+                },
+                "serverTimeStamp": 1701980219229,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701959889956,
+                    "originalTimeStamp": 1701959889956,
+                    "customerInfo": {
+                        "customerStatus": "d14e68ce-dc76-4bc5-a3f0-dadee12b7205",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "d14e68ce-dc76-4bc5-a3f0-dadee12b7205",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701959889956,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701962386492,
+                    "originalTimeStamp": 1701962386492,
+                    "customerInfo": {
+                        "customerStatus": "58314210-98b0-4e86-9637-638f408647d0",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "58314210-98b0-4e86-9637-638f408647d0",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701962386492,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701887418906,
+                    "originalTimeStamp": 1701887418906,
+                    "customerInfo": {
+                        "customerStatus": "af5689b6-78bc-4569-b274-4e0cb4e67cae",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "af5689b6-78bc-4569-b274-4e0cb4e67cae",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701887418906,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701795242048,
+                    "originalTimeStamp": 1701795242048,
+                    "customerInfo": {
+                        "customerStatus": "d14e68ce-dc76-4bc5-a3f0-dadee12b7205",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "d14e68ce-dc76-4bc5-a3f0-dadee12b7205",
+                        "companyBranch": "transaction_help_form"
+                    }
+                },
+                "serverTimeStamp": 1701795242048,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701875815779,
+                    "originalTimeStamp": 1701875815779,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701875815779,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701971323938,
+                    "originalTimeStamp": 1701971323938,
+                    "customerInfo": {
+                        "customerStatus": "3fb15434-f112-45dc-9d2c-8ab58550ce83",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "3fb15434-f112-45dc-9d2c-8ab58550ce83",
+                        "companyBranch": "guided_flow"
+                    }
+                },
+                "serverTimeStamp": 1701971323938,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701982840690,
+                    "originalTimeStamp": 1701982840690,
+                    "customerInfo": {
+                        "customerStatus": "c89fe3ad-a8fd-445f-9951-d6a531f6ab9c",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "c89fe3ad-a8fd-445f-9951-d6a531f6ab9c",
+                        "companyBranch": "transaction_help_textedited"
+                    }
+                },
+                "serverTimeStamp": 1701982840690,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701800983659,
+                    "originalTimeStamp": 1701800983659,
+                    "customerInfo": {
+                        "customerStatus": "5184e674-e533-4021-afc7-090ba2671942",
+                        "customerType": "wallet : transaction : duplicate",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "5184e674-e533-4021-afc7-090ba2671942",
+                        "companyBranch": "transaction_duplicate"
+                    }
+                },
+                "serverTimeStamp": 1701800983659,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701881550187,
+                    "originalTimeStamp": 1701881550187,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701881550187,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701877548170,
+                    "originalTimeStamp": 1701877548170,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701877548170,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701978320386,
+                    "originalTimeStamp": 1701978320386,
+                    "customerInfo": {
+                        "customerStatus": "f6b6333f-affe-44a8-b62d-f3c9c21e584e",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "f6b6333f-affe-44a8-b62d-f3c9c21e584e",
+                        "companyBranch": "transaction_help_textedited"
+                    }
+                },
+                "serverTimeStamp": 1701978320386,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701888559815,
+                    "originalTimeStamp": 1701888559815,
+                    "customerInfo": {
+                        "customerStatus": "31dbb400-1d95-4513-9870-1fdc30d99adc",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "31dbb400-1d95-4513-9870-1fdc30d99adc",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701888559815,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701971137213,
+                    "originalTimeStamp": 1701971137213,
+                    "customerInfo": {
+                        "customerStatus": "3fb15434-f112-45dc-9d2c-8ab58550ce83",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "3fb15434-f112-45dc-9d2c-8ab58550ce83",
+                        "companyBranch": "transaction_help_textedited"
+                    }
+                },
+                "serverTimeStamp": 1701971137213,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701883386200,
+                    "originalTimeStamp": 1701883386200,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701883386200,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701888989863,
+                    "originalTimeStamp": 1701888989863,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701888989863,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701875354693,
+                    "originalTimeStamp": 1701875354693,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701875354693,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701888802091,
+                    "originalTimeStamp": 1701888802091,
+                    "customerInfo": {
+                        "customerStatus": "4d5192fc-174b-4147-a1bb-3176196e6fe5",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "4d5192fc-174b-4147-a1bb-3176196e6fe5",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701888802091,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701887418906,
+                    "originalTimeStamp": 1701887418906,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701887418906,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701982985345,
+                    "originalTimeStamp": 1701982985345,
+                    "customerInfo": {
+                        "customerStatus": "c89fe3ad-a8fd-445f-9951-d6a531f6ab9c",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "c89fe3ad-a8fd-445f-9951-d6a531f6ab9c",
+                        "companyBranch": "dispute_manage"
+                    }
+                },
+                "serverTimeStamp": 1701982985345,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701801635415,
+                    "originalTimeStamp": 1701801635415,
+                    "customerInfo": {
+                        "customerStatus": "7c8ecc07-22ce-4540-a494-85a1b435c8ad",
+                        "customerType": "wallet : transaction : otherissue",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "7c8ecc07-22ce-4540-a494-85a1b435c8ad",
+                        "companyBranch": "transaction_otherissue"
+                    }
+                },
+                "serverTimeStamp": 1701801635415,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701897199682,
+                    "originalTimeStamp": 1701897199682,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701897199682,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701965338138,
+                    "originalTimeStamp": 1701965338138,
+                    "customerInfo": {
+                        "customerStatus": "3fb15434-f112-45dc-9d2c-8ab58550ce83",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "3fb15434-f112-45dc-9d2c-8ab58550ce83",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701965338138,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701880820264,
+                    "originalTimeStamp": 1701880820264,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701880820264,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701982840690,
+                    "originalTimeStamp": 1701982840690,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701982840690,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701896762821,
+                    "originalTimeStamp": 1701896762821,
+                    "customerInfo": {
+                        "customerStatus": "27e84336-b56b-4796-bcf5-e476226b4610",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "27e84336-b56b-4796-bcf5-e476226b4610",
+                        "companyBranch": "transaction_help_textedited"
+                    }
+                },
+                "serverTimeStamp": 1701896762821,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701961931437,
+                    "originalTimeStamp": 1701961931437,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701961931437,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701888014290,
+                    "originalTimeStamp": 1701888014290,
+                    "customerInfo": {
+                        "customerStatus": "5fa0dde0-7a33-48c0-8994-111b112c7074",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "5fa0dde0-7a33-48c0-8994-111b112c7074",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701888014290,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701971323938,
+                    "originalTimeStamp": 1701971323938,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701971323938,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701883149930,
+                    "originalTimeStamp": 1701883149930,
+                    "personalInfo": {
+                        "company": "Transunion",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701883149930,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701960231002,
+                    "originalTimeStamp": 1701960231002,
+                    "customerInfo": {
+                        "customerStatus": "0aeb4c9b-21d8-486d-a868-42f086456ce7",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "0aeb4c9b-21d8-486d-a868-42f086456ce7",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701960231002,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701793781930,
+                    "originalTimeStamp": 1701793781930,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701793781930,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701886358751,
+                    "originalTimeStamp": 1701886358751,
+                    "customerInfo": {
+                        "customerStatus": "ac6f6eb3-d368-4113-ba1a-1eb3cc6b0d54",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "ac6f6eb3-d368-4113-ba1a-1eb3cc6b0d54",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701886358751,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701878990483,
+                    "originalTimeStamp": 1701878990483,
+                    "customerInfo": {
+                        "customerStatus": "0dbd68e2-40af-4ce6-abfb-7979695e05e9",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "0dbd68e2-40af-4ce6-abfb-7979695e05e9",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701878990483,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701797450383,
+                    "originalTimeStamp": 1701797450383,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701797450383,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701887798394,
+                    "originalTimeStamp": 1701887798394,
+                    "customerInfo": {
+                        "customerStatus": "407f0da0-b81c-47b2-b11e-9741285b63cd",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "407f0da0-b81c-47b2-b11e-9741285b63cd",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701887798394,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701800091932,
+                    "originalTimeStamp": 1701800091932,
+                    "customerInfo": {
+                        "customerStatus": "1281a5f3-6692-4f77-9775-65f7202725e3",
+                        "customerType": "wallet : transaction : incorrectamount",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "1281a5f3-6692-4f77-9775-65f7202725e3",
+                        "companyBranch": "transaction_incorrectamount"
+                    }
+                },
+                "serverTimeStamp": 1701800091932,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701801155537,
+                    "originalTimeStamp": 1701801155537,
+                    "customerInfo": {
+                        "customerStatus": "27e84336-b56b-4796-bcf5-e476226b4610",
+                        "customerType": "wallet : transaction : damagedorreturned",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "27e84336-b56b-4796-bcf5-e476226b4610",
+                        "companyBranch": "transaction_damagedorreturned"
+                    }
+                },
+                "serverTimeStamp": 1701801155537,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701881815963,
+                    "originalTimeStamp": 1701881815963,
+                    "personalInfo": {
+                        "company": "Fancy Hanks",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701881815963,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701898914700,
+                    "originalTimeStamp": 1701898914700,
+                    "customerInfo": {
+                        "customerStatus": "1281a5f3-6692-4f77-9775-65f7202725e3",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "1281a5f3-6692-4f77-9775-65f7202725e3",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701898914700,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701982985345,
+                    "originalTimeStamp": 1701982985345,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701982985345,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701961233024,
+                    "originalTimeStamp": 1701961233024,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701961233024,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701880121079,
+                    "originalTimeStamp": 1701880121079,
+                    "customerInfo": {
+                        "customerStatus": "6ac8fea7-3b3d-442f-a43b-9f4e4b26bd77",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "6ac8fea7-3b3d-442f-a43b-9f4e4b26bd77",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701880121079,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701963319586,
+                    "originalTimeStamp": 1701963319586,
+                    "customerInfo": {
+                        "customerStatus": "53bb7255-3b3b-4ce1-a171-67f37e189c4c",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "53bb7255-3b3b-4ce1-a171-67f37e189c4c",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701963319586,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701888802091,
+                    "originalTimeStamp": 1701888802091,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701888802091,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701962174516,
+                    "originalTimeStamp": 1701962174516,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701962174516,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701883386200,
+                    "originalTimeStamp": 1701883386200,
+                    "customerInfo": {
+                        "customerStatus": "63de1226-6ae9-4e8f-ae91-e5dcc27a84c3",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "63de1226-6ae9-4e8f-ae91-e5dcc27a84c3",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701883386200,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701962386492,
+                    "originalTimeStamp": 1701962386492,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701962386492,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701798700095,
+                    "originalTimeStamp": 1701798700095,
+                    "personalInfo": {
+                        "company": "A Plus Phone",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701798700095,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701964979949,
+                    "originalTimeStamp": 1701964979949,
+                    "customerInfo": {
+                        "customerStatus": "d0c23671-5c34-4840-add8-862dd8d296fa",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "d0c23671-5c34-4840-add8-862dd8d296fa",
+                        "companyBranch": "transaction_help_textnotedited"
+                    }
+                },
+                "serverTimeStamp": 1701964979949,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701878288417,
+                    "originalTimeStamp": 1701878288417,
+                    "customerInfo": {
+                        "customerStatus": "cf5bbdf9-7c18-4026-800a-55976587f83b",
+                        "customerType": "wallet : transaction : canceled",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "cf5bbdf9-7c18-4026-800a-55976587f83b",
+                        "companyBranch": "transaction_canceled_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701878288417,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701881101030,
+                    "originalTimeStamp": 1701881101030,
+                    "customerInfo": {
+                        "customerStatus": "c651f7c4-e820-46d6-b53e-e529fd4f6b60",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "c651f7c4-e820-46d6-b53e-e529fd4f6b60",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701881101030,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701802322810,
+                    "originalTimeStamp": 1701802322810,
+                    "personalInfo": {
+                        "company": "SXM Siriusxm.com",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701802322810,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701963100212,
+                    "originalTimeStamp": 1701963100212,
+                    "customerInfo": {
+                        "customerStatus": "003ec063-4b02-4095-949d-2ee6714611bb",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "003ec063-4b02-4095-949d-2ee6714611bb",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701963100212,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701888989863,
+                    "originalTimeStamp": 1701888989863,
+                    "customerInfo": {
+                        "customerStatus": "8c0a83e8-c9ec-4401-871d-db037195cb1d",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "8c0a83e8-c9ec-4401-871d-db037195cb1d",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701888989863,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701961931437,
+                    "originalTimeStamp": 1701961931437,
+                    "customerInfo": {
+                        "customerStatus": "293e177c-a495-4930-ae47-00d73d222e1d",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "293e177c-a495-4930-ae47-00d73d222e1d",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701961931437,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701889170894,
+                    "originalTimeStamp": 1701889170894,
+                    "customerInfo": {
+                        "customerStatus": "a89478fa-a753-41bf-9809-9f77050460a3",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "a89478fa-a753-41bf-9809-9f77050460a3",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701889170894,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701807527777,
+                    "originalTimeStamp": 1701807527777,
+                    "customerInfo": {
+                        "customerStatus": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "customerType": "wallet : transaction : otherissue",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "b76e312f-cbcb-4dac-9b05-d77abd6eda58",
+                        "companyBranch": "transaction_help_textedited"
+                    }
+                },
+                "serverTimeStamp": 1701807527777,
+                "sdeType": "CUSTOMER_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701961444467,
+                    "originalTimeStamp": 1701961444467,
+                    "personalInfo": {
+                        "company": "American Airlines",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701961444467,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "personalInfo": {
+                    "serverTimeStamp": 1701881306518,
+                    "originalTimeStamp": 1701881306518,
+                    "personalInfo": {
+                        "company": "Squashtv",
+                        "language": "Card",
+                        "contacts": [
+                            {
+                                "personalContact": {
+                                    "email": "Card",
+                                    "phone": null,
+                                    "phoneType": null,
+                                    "address": null,
+                                    "preferredContactMethod": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                "serverTimeStamp": 1701881306518,
+                "sdeType": "PERSONAL_INFO"
+            },
+            {
+                "customerInfo": {
+                    "serverTimeStamp": 1701875815779,
+                    "originalTimeStamp": 1701875815779,
+                    "customerInfo": {
+                        "customerStatus": "aa030854-c9b7-435d-817e-5487af4bf27b",
+                        "customerType": "wallet : transaction : help",
+                        "customerId": "8768e97e-8eda-40a7-80a0-4adaa77b6813",
+                        "socialId": "1c8ddacf-bb11-451f-bff0-f3d60c2c59b9|Card",
+                        "userName": "FAMILY",
+                        "accountName": "aa030854-c9b7-435d-817e-5487af4bf27b",
+                        "companyBranch": "transaction_help_form_formhandoff"
+                    }
+                },
+                "serverTimeStamp": 1701875815779,
+                "sdeType": "CUSTOMER_INFO"
+            }
+        ]
+    }

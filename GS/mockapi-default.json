@@ -1,0 +1,43 @@
+{
+  "lp_sdes": [
+    {
+      "type": "ctmrinfo",
+      "info": {
+        "cstatus": "cancelled",
+        "ctype": "vip",
+        "customerId": "138766AC",
+        "balance": -500.99,
+        "socialId": "11256324780",
+        "imei": "35435465435456",
+        "phoneNumber": "6174017911",
+        "username": "wei lai",
+        "companySize": 500,
+        "accountName": "GS-account-name3",
+        "role": "broker",
+        "lastPaymentDate": {
+          "day": 15,
+          "month": 10,
+          "year": 2022
+        },
+        "registrationDate": {
+          "day": 23,
+          "month": 5,
+          "year": 2013
+        }
+      }
+    },
+    {
+      "type": "personal",
+      "personal": {
+        "contacts": [
+          {
+            "phone": "+1 617-401-7911"
+          }
+        ],
+        "gender": "MALE",
+        "language": "en-US",
+        "company": "company"
+      }
+    }
+  ]
+}
