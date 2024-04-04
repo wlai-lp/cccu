@@ -4,8 +4,8 @@ const fs = require("fs");
 const firstPage = 1;
 // const lastPage = 219;
 let currentPage = 1;
-const lastPage = 226;
-const bookNumber = 66;
+const lastPage = 190;
+const bookNumber = 75;
 
 let hasError = false;
 
@@ -22,9 +22,10 @@ async function getNextPage() {
   }
   const outputFilePath = `./files/${bookNumber}-${page}.jpg`;
 
-  // king
-  // https://eu1.hamreus.com/ps1/w/wztx/40/i-004.jpg.webp
-  let _url = `https://eu1.hamreus.com/ps1/w/wztx/${bookNumber}/${page}.jpg.webp`;
+  // one piece
+  // let _url = `https://eu1.hamreus.com/ps1/h/op/vol_${bookNumber}/${page}.jpg.webp`;
+  // fire
+  let _url = `https://eu1.hamreus.com/ps1/h/HFLY/${bookNumber}/${page}.jpg.webp`;
 
   // url: 'https://eu1.hamreus.com/ps1/h/op/vol_100/002.jpg.webp',
 
@@ -60,7 +61,7 @@ async function delayedLoop() {
   // Define the condition for the while loop
   if (currentPage <= lastPage && !hasError) {
     const randomNumber = Math.floor(Math.random() * 10) + 1;
-    const delayMilliseconds = randomNumber / 4 * 1000;
+    const delayMilliseconds = randomNumber * 1000;
     console.log('wait ' + delayMilliseconds);
     // get page
     await getNextPage();

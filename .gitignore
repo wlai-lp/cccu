@@ -131,3 +131,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 weinode/files/
+weinode/readjson/output.csv
+weinode/readjson/payload.json
+weinode/readjson/translationwidget.json
+weinode/readjson/gs-servicing.json
+weinode/readjson/gs-disput.json

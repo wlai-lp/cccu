@@ -15,3 +15,10 @@ cccu-demo
 
 # wei_auth
 - authentication works
+
+
+# use tsc to run typescript
+to easily cast json to type and reference them
+
+npm install --save-dev tsx
+npx tsx gs-bot.ts
