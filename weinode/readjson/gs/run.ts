@@ -4,6 +4,7 @@ import * as fs from 'fs';
 import internal from "stream";
 
 const filePath = 'data.json';
+const outputfilePath = 'data/output.txt';
 
 // Read the JSON file
 fs.readFile(filePath, 'utf8', (err, data) => {
@@ -32,7 +33,7 @@ class Example  {
         this.transfers = 0
     };
     toString(){
-        return `${this.lpconvoId},${this.aIntent},${this.aConvoId},${this.gsIntent},${this.startSkill},${this.finalSkill},${this.transfers}`
+        return `${this.lpconvoId}\t${this.aIntent}\t${this.aConvoId}\t${this.gsIntent}\t${this.startSkill}\t${this.finalSkill}\t${this.transfers}\n`
     }
 
   }
@@ -91,6 +92,13 @@ class Example  {
 
 
         console.log(example.toString());
+        fs.appendFile(outputfilePath, example.toString(), (err) => {
+            if (err) {
+                console.error('Error writing to file:', err);
+                return;
+            }
+            console.log('Data has been written to the file:', outputfilePath);
+        });
         
     }
     
