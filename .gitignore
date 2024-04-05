@@ -138,3 +138,4 @@ weinode/readjson/gs-servicing.json
 weinode/readjson/gs-disput.json
 weinode/readjson/gs/data/json/**/*.json
 weinode/readjson/gs/data/**/*.txt
+weinode/readjson/gs/data.json

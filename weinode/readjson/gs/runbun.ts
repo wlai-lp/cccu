@@ -4,15 +4,15 @@ import * as path from "path";
 import internal from "stream";
 
 const filePath = "data.json";
-const page = "000";
+const page = "001";
 const outputfileDir = `data/output/${page}/`;
 // Directory path
 const inputDir = `data/json/${page}`;
 const outputFullPath = outputfileDir + page + ".txt";
 
-const header = `lpconvoId\taIntent\taConvoId\tgsIntent\tstartSkill\tfinalSkill\t$transfers\n`;
+const header = `lpconvoId\taIntent\taConvoId\tgsIntent\tstartSkill\tfinalSkill\ttransfers\tmessage\n`;
 
-console.log("start " + Date.now())
+console.log("start " + Date.now());
 
 // create outputfile and prefix with header
 fs.writeFile(outputFullPath, header, (err) => {
@@ -20,7 +20,7 @@ fs.writeFile(outputFullPath, header, (err) => {
     console.error("Error creating file:", err);
     return;
   }
-  console.log("File created successfully:", header);
+  console.log("File created successfully:", outputFullPath);
 });
 
 console.log("reading input file dir " + inputDir);
@@ -53,6 +53,7 @@ fs.readdir(inputDir, (err, files) => {
         finalSkill: string;
         startSkill: string;
         transfers: number;
+        payload: string;
         constructor() {
           this.lpconvoId = "";
           this.aIntent = "";
@@ -61,9 +62,10 @@ fs.readdir(inputDir, (err, files) => {
           this.finalSkill = "";
           this.startSkill = "";
           this.transfers = 0;
+          this.payload = "";
         }
         toString() {
-          return `${this.lpconvoId}\t${this.aIntent}\t${this.aConvoId}\t${this.gsIntent}\t${this.startSkill}\t${this.finalSkill}\t${this.transfers}\n`;
+          return `${this.lpconvoId}\t${this.aIntent}\t${this.aConvoId}\t${this.gsIntent}\t${this.startSkill}\t${this.finalSkill}\t${this.transfers}\t${this.payload}\n`;
         }
       }
 
@@ -88,6 +90,7 @@ fs.readdir(inputDir, (err, files) => {
           example.lpconvoId = convo.info.conversationId;
           example.aIntent = aIntnet;
           example.aConvoId = aConvoId;
+          example.payload = cleanPayload(convo.messageRecords[0].messageData.msg.text);
 
           // get the latest transfer event
           let lastTime = 0;
@@ -119,13 +122,13 @@ fs.readdir(inputDir, (err, files) => {
 
           // here's where we put all the custom transfer logic evaluation
 
-          console.log(example.toString());
+          //   console.log(example.toString());
           fs.appendFile(outputFullPath, example.toString(), (err) => {
             if (err) {
               console.error("Error writing to file:", err);
               return;
             }
-            console.log("Data has been written to the file:", outputFullPath);
+            // console.log("Data has been written to the file:", outputFullPath);
           });
         }
       } catch (parseError) {
@@ -135,4 +138,20 @@ fs.readdir(inputDir, (err, files) => {
   });
 });
 
-console.log("done " + Date.now())
+console.log("done " + Date.now());
+
+function cleanPayload(msg : string) {
+  // const msg = "****Start Conversation Context****\n\nSource: BOT\nIntent: payment_hold_list\nApple Conversation ID: 1701968235955-515498ff5b3efa77207d3a18b99228e16440\n\nTranscript:\n\n[11:57  EST] customer: \"I’d like some help with a payment.\"\n\n[11:57  EST] NLP_BOT: \"I can help with this Apple Card payment. Which best describes your issue?\n\n1. Cancel payment\n2. Available credit after payment\n3. Something else\"\n\n[11:57  EST] customer: \"Available credit after payment\"\n\n[11:57  EST] NLP_BOT: \"Thanks. Just a moment while Goldman Sachs reviews your request.\"\n\n[11:57  EST] NLP_BOT: \"Thanks. Just a moment while Goldman Sachs reviews your request.\"\n\n****End Conversation Context****\n\ni'd like some help with a payment."
+
+  const cleanDoubleQuote = msg.replace(/\"/g, "'");
+
+  const strArray = cleanDoubleQuote.split("\n").filter((e) => e.length > 0);
+
+  let result = "=CONCATENATE(";
+  for (const s of strArray) {
+    result = result + '"' + s + '"' + ",CHAR(10),";
+  }
+  result = result.substring(0, result.length - 10) + ")";
+//   console.log(result);
+  return result;
+}
