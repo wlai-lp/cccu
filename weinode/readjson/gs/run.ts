@@ -1,4 +1,3 @@
-import { log } from "console";
 import * as convoTypes from "./types";
 import * as fs from 'fs';
 import internal from "stream";

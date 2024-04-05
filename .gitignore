@@ -136,3 +136,5 @@ weinode/readjson/payload.json
 weinode/readjson/translationwidget.json
 weinode/readjson/gs-servicing.json
 weinode/readjson/gs-disput.json
+weinode/readjson/gs/data/json/**/*.json
+weinode/readjson/gs/data/**/*.txt
