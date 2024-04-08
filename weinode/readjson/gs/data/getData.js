@@ -3,15 +3,27 @@ const fs = require("fs");
 // File path
 const filePath = "example.txt";
 let page = 0;
-const lastPage = 47973;
+const lastPage = 1073;
+const token = '';
+
+const fromDateString = '3/1/2024';
+const toDateString = '3/2/2024';
+const fromDate = new Date(fromDateString);
+const toDate = new Date(toDateString);
+// const timestamp = dateToTimestamp(date);
+console.log(fromDate.getTime()); // Output: Unix timestamp in milliseconds
+const outputFolderDate = fromDate.toLocaleDateString('en-US').replace(/\//g, '')
+
+// TODO: need to generate output folder if it doesn't exist
+
 // Write to file
 
 const axios = require("axios");
 let data = JSON.stringify({
   status: ["OPEN", "CLOSE"],
   start: {
-    from: 1701450000000,
-    to: 1701968400000,
+    from: fromDate.getTime(),
+    to: toDate.getTime(),
   },
   skillIds: ["1497707214"],
   contentToRetrieve: [
@@ -35,7 +47,7 @@ for (page; page < lastPage; page+=100) {
     headers: {
       accept: "*/*",
       authorization:
-        "Bearer 8c7473a0112cb678039b34be91758b9a034d37a945ce29643a9b942664e15bc7",
+       `Bearer ${token}`,
       "content-type": "application/json",
     },
     data: data,
@@ -59,7 +71,7 @@ for (page; page < lastPage; page+=100) {
       if (match) {
         const offset = parseInt(match[1]); // Convert the matched string to a number
         console.log("Offset:", offset);
-        const outputfile = `json/000/jsonpage${offset}.json`;
+        const outputfile = `json/${outputFolderDate}/jsonpage${offset}.json`;
         fs.writeFile(outputfile, JSON.stringify(jsonData), (err) => {
             if (err) {
               console.error("Error writing to file:", err);
