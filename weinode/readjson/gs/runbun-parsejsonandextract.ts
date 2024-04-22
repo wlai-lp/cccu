@@ -9,13 +9,13 @@ import * as path from "path";
 import internal from "stream";
 
 const filePath = "data.json";
-const page = "312024";
+const page = "003";
 const outputfileDir = `data/output/${page}/`;
 // Directory path
 const inputDir = `data/json/${page}`;
 const outputFullPath = outputfileDir + page + ".txt";
 
-const header = `lpconvoId\taIntent\taConvoId\tgsIntent\tstartSkill\tfinalSkill\ttransfers\tmessage\n`;
+const header = `lpconvoId\taIntent\taConvoId\tgsIntent\tstartSkill\tfinalSkill\ttransfers\tmessage\textract\n`;
 
 console.log("start " + Date.now());
 
@@ -59,6 +59,7 @@ fs.readdir(inputDir, (err, files) => {
         startSkill: string;
         transfers: number;
         payload: string;
+        extract: string;
         constructor() {
           this.lpconvoId = "";
           this.aIntent = "";
@@ -68,9 +69,10 @@ fs.readdir(inputDir, (err, files) => {
           this.startSkill = "";
           this.transfers = 0;
           this.payload = "";
+          this.extract = "";
         }
         toString() {
-          return `${this.lpconvoId}\t${this.aIntent}\t${this.aConvoId}\t${this.gsIntent}\t${this.startSkill}\t${this.finalSkill}\t${this.transfers}\t${this.payload}\n`;
+          return `${this.lpconvoId}\t${this.aIntent}\t${this.aConvoId}\t${this.gsIntent}\t${this.startSkill}\t${this.finalSkill}\t${this.transfers}\t${this.payload}\t${this.extract}\n`;
         }
       }
 
@@ -88,6 +90,11 @@ fs.readdir(inputDir, (err, files) => {
           let example: Example = new Example();
           let appleIntent = "";
           // console.log(convo.messageRecords[0].messageData.msg.text);
+          // if(!convo.messageRecords[0].messageData.msg.text.includes("\n") || !convo.messageRecords[0])
+          //     continue;
+
+          // console.log(JSON.stringify(convo.messageRecords))
+
           const msg: string[] =
             convo.messageRecords[0].messageData.msg.text.split("\n");
           const aIntnet = msg[3];
@@ -95,7 +102,14 @@ fs.readdir(inputDir, (err, files) => {
           example.lpconvoId = convo.info.conversationId;
           example.aIntent = aIntnet;
           example.aConvoId = aConvoId;
-          example.payload = cleanPayload(convo.messageRecords[0].messageData.msg.text);
+          example.payload = cleanPayload(
+            convo.messageRecords[0].messageData.msg.text
+          );
+          const payloadMsg = convo.messageRecords[0].messageData.msg.text
+          console.log("🚀 ~ fs.readFile ~ payloadMsg:", payloadMsg)
+          const extractStr = extractPayload(payloadMsg);
+          const lastLine = getLastLine(payloadMsg);
+          example.extract = extractStr + " " + lastLine;
 
           // get the latest transfer event
           let lastTime = 0;
@@ -145,7 +159,7 @@ fs.readdir(inputDir, (err, files) => {
 
 console.log("done " + Date.now());
 
-function cleanPayload(msg : string) {
+function cleanPayload(msg: string) {
   // const msg = "****Start Conversation Context****\n\nSource: BOT\nIntent: payment_hold_list\nApple Conversation ID: 1701968235955-515498ff5b3efa77207d3a18b99228e16440\n\nTranscript:\n\n[11:57  EST] customer: \"I’d like some help with a payment.\"\n\n[11:57  EST] NLP_BOT: \"I can help with this Apple Card payment. Which best describes your issue?\n\n1. Cancel payment\n2. Available credit after payment\n3. Something else\"\n\n[11:57  EST] customer: \"Available credit after payment\"\n\n[11:57  EST] NLP_BOT: \"Thanks. Just a moment while Goldman Sachs reviews your request.\"\n\n[11:57  EST] NLP_BOT: \"Thanks. Just a moment while Goldman Sachs reviews your request.\"\n\n****End Conversation Context****\n\ni'd like some help with a payment."
 
   const cleanDoubleQuote = msg.replace(/\"/g, "'");
@@ -157,6 +171,44 @@ function cleanPayload(msg : string) {
     result = result + '"' + s + '"' + ",CHAR(10),";
   }
   result = result.substring(0, result.length - 10) + ")";
-//   console.log(result);
+  // console.log("🚀 ~ cleanPayload ~ result:", result)
+  //   console.log(result);
   return result;
+}
+
+function extractPayload(msg: string) {
+  // console.log("🚀 ~ extractPayload ~ msg:", msg)
+  const text = '[09:20 EST] customer: "I need help with this payment"';
+  const regex = /customer:\s*"([^"]*)"/ig; // Match "customer:" followed by non-quote characters inside quotes (global flag)
+  let match;
+  let finalStr = ""
+  while ((match = regex.exec(msg)) !== null) {
+      const parsedText = match[1].trim(); // Extracting the part after "customer:"
+      console.log("🚀 ~ extractPayload ~ parsedText:", parsedText)
+      finalStr = finalStr + " " + parsedText
+  }
+  return finalStr
+}
+
+function getLastLine(msg: string){
+//   const text = `****End Conversation Context****
+// hello can i change trevion to a co owner instead of participant`;
+  const lines = msg.split('\n');
+  const lastLine = lines[lines.length - 1].trim();
+  console.log("🚀🚀🚀🚀 ~ getLastLine ~ lastLine:", lastLine)
+  return (!lastLine.includes("End Conversation Context")) ? lastLine : ""
+
+
+  // const regex = /.*(?:[\r\n]+([^]+))/;
+  // const match = msg.match(regex);
+
+  // if (match && match.length > 1) {
+  //     const lastLine = match[1].trim();
+  //     console.log("🚀 ~ getLastLine ~ lastLine:", lastLine)
+  //     return (!lastLine.includes("End Conversation Context")) ? lastLine : ""
+  // } else {
+  //     console.log("No match found.");
+  // }
+  // return ""
+
 }

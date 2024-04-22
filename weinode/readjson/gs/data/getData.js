@@ -3,11 +3,11 @@ const fs = require("fs");
 // File path
 const filePath = "example.txt";
 let page = 0;
-const lastPage = 1073;
-const token = '';
+const lastPage = 20;
+const token = '9639870715951bebdaa821fae52b707503e1df7d6a10115f99b867e2c3f4470f';
 
-const fromDateString = '3/1/2024';
-const toDateString = '3/2/2024';
+const fromDateString = '3/2/2024';
+const toDateString = '3/3/2024';
 const fromDate = new Date(fromDateString);
 const toDate = new Date(toDateString);
 // const timestamp = dateToTimestamp(date);
@@ -38,7 +38,7 @@ let data = JSON.stringify({
 });
 
 for (page; page < lastPage; page+=100) {
-  let url = `https://va.msghist.liveperson.net/messaging_history/api/account/21257964/conversations/search?source=ccuiNAWAllConEngs&offset=${page}&limit=100`;
+  let url = `https://va.msghist.liveperson.net/messaging_history/api/account/21257964/conversations/search?source=ccuiNAWAllConEngs&offset=${page}&limit=10`;
   console.log(url);
   let config = {
     method: "post",
