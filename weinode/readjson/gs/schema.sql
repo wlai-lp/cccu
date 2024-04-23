@@ -1,5 +1,6 @@
 
 DROP TABLE IF EXISTS intent_intent_call;
+DROP TABLE IF EXISTS intent_call;
 DROP TABLE IF EXISTS intent_batch_run;
 
 CREATE TABLE intent_batch_run (
@@ -9,10 +10,12 @@ CREATE TABLE intent_batch_run (
   searchCount INTEGER
 );
 
-CREATE TABLE intent_intent_call (
+CREATE TABLE intent_call (
   intent_call_id INTEGER PRIMARY KEY,
-  batch_run_id INTEGER NOT NULL,  
-  result TEXT DEFAULT '',  
-  FOREIGN KEY (batch_run_id) REFERENCES intent_batch_run(batch_run_id) ON DELETE CASCADE
+--   batch_run_id INTEGER NOT NULL,  
+  message TEXT DEFAULT '',
+  inputSentence TEXT DEFAULT '',
+  intentName TEXT DEFAULT ''
+--   FOREIGN KEY (batch_run_id) REFERENCES intent_batch_run(batch_run_id) ON DELETE CASCADE
 );
 

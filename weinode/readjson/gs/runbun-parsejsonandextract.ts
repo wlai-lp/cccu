@@ -11,7 +11,6 @@ const dbclient = createClient({
   authToken: process.env.TURSO_AUTH_TOKEN,
 });
 
-
 import * as convoTypes from "./types";
 import * as fs from "fs";
 import * as path from "path";
@@ -226,15 +225,26 @@ async function analyzeIntent(intents: string[]) {
   );
   const jsonData = await response.json();
   const access_token = jsonData.access_token;
-  console.log("🚀 ~ files.forEach ~ access_token:", access_token);
+  // console.log("🚀 ~ files.forEach ~ access_token:", access_token);
 
-  
-
-  for(let intent in intents){
-    console.log("process intent")
-    const intentResult: convoTypes.IntentResult = await postData(intent, access_token);
-    console.log(intentResult.success)
-    await new Promise(resolve => setTimeout(resolve, 1000))
+  // MARK: intent
+  for (let intent in intents) {
+    // console.log("process intent")
+    const intentResult: convoTypes.IntentResult = await postData(
+      intent,
+      access_token
+    );
+    const record = await insertIntentRecord(intentResult);
+    console.log(
+      "🚀 ~ " +
+        intentResult.success +
+        " " +
+        intentResult.message +
+        " " +
+        intentResult.successResult.match_results[0].intentName
+    );
+    // this just wait before doing the next call
+    await new Promise((resolve) => setTimeout(resolve, 100));
   }
 
   // const raw = JSON.stringify({
@@ -257,13 +267,13 @@ async function analyzeIntent(intents: string[]) {
 }
 
 // Function to perform a single API POST request
-async function postData(intent:string, access_token:string): Promise<any> {
+async function postData(intent: string, access_token: string): Promise<any> {
   const myHeaders = new Headers();
   myHeaders.append("x-api-key", "jeXR0XggdGcIDKtdYymmhF137CNcdqUA");
   myHeaders.append("Content-Type", "application/json");
   myHeaders.append("Authorization", `Bearer ${access_token}`);
 
-   const raw = JSON.stringify({
+  const raw = JSON.stringify({
     input: intent,
     predictAcrossDomain: true,
   });
@@ -279,14 +289,25 @@ async function postData(intent:string, access_token:string): Promise<any> {
     requestOptions
   );
   const jsonObject = await result.json();
-  console.log(JSON.stringify(jsonObject));
-  console.log(process.env.TOKEN);
+  // console.log(JSON.stringify(jsonObject));
+  // console.log(process.env.TOKEN);
   return jsonObject;
 }
 
-
-
-
+async function createBatch(start_timestamp: number) {
+  try {
+    const rs = await dbclient.execute({
+      sql: `insert into batch_run(start_timestamp)
+            values (:start_timestamp)`,
+      args: { start_timestamp },
+    });
+    // lastInsertRowid is primary key
+    console.log(`batchTable last insert record is ${rs.lastInsertRowid}`);
+    return rs.lastInsertRowid;
+  } catch (error: any) {
+    console.error("⛔ ~ batchTable createBatch: ~ error:", error.message);
+  }
+}
 
 function tokenHeader() {
   const myHeaders = new Headers();
@@ -303,4 +324,21 @@ function tokenOption(myHeaders) {
     method: "POST",
     headers: myHeaders,
   };
+}
+async function insertIntentRecord(intentResult: convoTypes.IntentResult) {
+  try {
+    const message = intentResult.message
+    const inputSentence = intentResult.successResult.match_results[0].inputSentence
+    const intentName = intentResult.successResult.match_results[0].intentName
+    const rs = await dbclient.execute({
+      sql: `insert into intent_call(message, inputSentence, intentName)
+            values (:message, :inputSentence, :intentName)`,
+      args: { message, inputSentence, intentName },
+    });
+    // lastInsertRowid is primary key
+    console.log(`batchTable last insert record is ${rs.lastInsertRowid}`);
+    return rs.lastInsertRowid;
+  } catch (error: any) {
+    console.error("⛔ ~ batchTable createBatch: ~ error:", error.message);
+  }
 }
