@@ -92,7 +92,7 @@ export function extractPayload(msg: string) {
     // console.log("🚀 ~ extractPayload ~ parsedText:", parsedText)
     finalStr = finalStr + " " + parsedText;
   }
-  finalStr = removeNewlines(finalStr)
+  finalStr = removeSpecialChars(finalStr)
   return finalStr;
 }
 
@@ -104,157 +104,29 @@ export function getLastLine(msg: string) {
   // TODO: process exceptions
   const result = dropExceptions(lastLine);
   // console.log("🚀🚀🚀🚀 ~ getLastLine ~ lastLine:", lastLine)
-  return !lastLine.includes("End Conversation Context") ? lastLine : "";
+  return result;
 }
 
-function removeNewlines(input: string): string {
-  return input.replace(/\n/g, "");
+function removeSpecialChars(input: string): string {
+  return input.replace(/[\n&]/g, "");
 }
 
 
 function dropExceptions(msg: string) {
   const exceptionStrings: string[] = [];
   // add all the exceptions here
-  exceptionStrings.push("****End Conversation Context****");
-  exceptionStrings.push("*** Form end ***");
-
-  for (const str of exceptionStrings) {
-    if (str.includes(msg)) {
+  // usage, exceptionString should contain the subString of msg that you want to filter
+  // for example msg is *** Form end ***
+  // we just add exception Form end
+  exceptionStrings.push("End Conversation Context");
+  exceptionStrings.push("Form end");
+  exceptionStrings.push("Transferring to agent");
+  
+  for (const str of exceptionStrings) {  
+    if (msg.includes(str)) {
+      console.log("🚀 ~ dropExceptions ~ str:", str)
       return "";
     }
   }
   return msg;
-}
-
-async function analyzeIntent(intents: string[]) {
-  const tokenHeaders = tokenHeader();
-
-  const tokenOptions = tokenOption(tokenHeaders);
-
-  const response = await fetch(
-    "https://us.livepersonapis.com/auth/v2/accesstoken?grant_type=client_credentials",
-    tokenOptions
-  );
-  const jsonData = await response.json();
-  const access_token = jsonData.access_token;
-  // console.log("🚀 ~ files.forEach ~ access_token:", access_token);
-
-  // MARK: intent
-  for (let idx in intents) {
-    // console.log("process intent")
-    const intentResult: convoTypes.IntentResult = await postData(
-      intents[idx],
-      access_token
-    );
-    // const record = await insertIntentRecord(intentResult);
-    console.log("🚀 ~ analyzeIntent ~ intentResult:", intentResult);
-    console.log(
-      "🚀 ~ " +
-        intentResult.success +
-        " " +
-        intentResult.message +
-        " " +
-        intentResult.successResult.match_results[0].inputSentence
-    );
-    // this just wait before doing the next call
-    // await new Promise((resolve) => setTimeout(resolve, 100));
-  }
-
-  // const raw = JSON.stringify({
-  //   input: fullMsg,
-  //   predictAcrossDomain: true,
-  // });
-
-  // const requestOptions = {
-  //   method: "POST",
-  //   headers: myHeaders,
-  //   body: raw,
-  // };
-
-  // const result = await fetch(
-  //   "https://us.livepersonapis.com/cb/nlu/v1/accounts/36416044/domains/68384fbc-fa2a-4a32-b7fe-0226724e31ec/intentDetection/predict",
-  //   requestOptions
-  // );
-  // const jsonObject = await result.json();
-  // console.log(JSON.stringify(jsonObject));
-}
-
-// Function to perform a single API POST request
-// MARK: postdata
-async function postData(intent: string, access_token: string): Promise<any> {
-  const myHeaders = new Headers();
-  myHeaders.append("x-api-key", "jeXR0XggdGcIDKtdYymmhF137CNcdqUA");
-  myHeaders.append("Content-Type", "application/json");
-  myHeaders.append("Authorization", `Bearer ${access_token}`);
-
-  const raw = JSON.stringify({
-    input: intent,
-    predictAcrossDomain: true,
-  });
-
-  const requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    body: raw,
-  };
-
-  const result = await fetch(
-    "https://us.livepersonapis.com/cb/nlu/v1/accounts/36416044/domains/68384fbc-fa2a-4a32-b7fe-0226724e31ec/intentDetection/predict",
-    requestOptions
-  );
-  const jsonObject = await result.json();
-  // console.log(JSON.stringify(jsonObject));
-  // console.log(process.env.TOKEN);
-  return jsonObject;
-}
-
-async function createBatch(start_timestamp: number) {
-  try {
-    const rs = await dbclient.execute({
-      sql: `insert into batch_run(start_timestamp)
-            values (:start_timestamp)`,
-      args: { start_timestamp },
-    });
-    // lastInsertRowid is primary key
-    console.log(`batchTable last insert record is ${rs.lastInsertRowid}`);
-    return rs.lastInsertRowid;
-  } catch (error: any) {
-    console.error("⛔ ~ batchTable createBatch: ~ error:", error.message);
-  }
-}
-
-function tokenHeader() {
-  const myHeaders = new Headers();
-  const appKey = process.env.APPKEY;
-  const basic = process.env.BASIC;
-  myHeaders.append("x-api-key", appKey!);
-  myHeaders.append("Authorization", `Basic ${basic}`);
-  return myHeaders;
-}
-
-function tokenOption(myHeaders) {
-  return {
-    method: "POST",
-    headers: myHeaders,
-  };
-}
-async function insertIntentRecord(intentResult: convoTypes.IntentResult) {
-  try {
-    const message = intentResult.message;
-    const inputSentence =
-      intentResult.successResult.match_results[0].inputSentence;
-    const intentName = intentResult.successResult.match_results[0].intentName;
-    const status = intentResult.successResult.match_results[0].status;
-    const metaIntent = intentResult.successResult.match_results[0].metaIntent;
-    const rs = await dbclient.execute({
-      sql: `insert into intent_call(message, inputSentence, intentName, status, metaIntent)
-            values (:message, :inputSentence, :intentName, :status, :metaIntent)`,
-      args: { message, inputSentence, intentName, status, metaIntent },
-    });
-    // lastInsertRowid is primary key
-    console.log(`batchTable last insert record is ${rs.lastInsertRowid}`);
-    return rs.lastInsertRowid;
-  } catch (error: any) {
-    console.error("⛔ ~ batchTable createBatch: ~ error:", error.message);
-  }
 }
