@@ -228,20 +228,21 @@ async function analyzeIntent(intents: string[]) {
   // console.log("🚀 ~ files.forEach ~ access_token:", access_token);
 
   // MARK: intent
-  for (let intent in intents) {
+  for (let idx in intents) {
     // console.log("process intent")
     const intentResult: convoTypes.IntentResult = await postData(
-      intent,
+      intents[idx],
       access_token
     );
     const record = await insertIntentRecord(intentResult);
+    console.log("🚀 ~ analyzeIntent ~ intentResult:", intentResult)
     console.log(
       "🚀 ~ " +
         intentResult.success +
         " " +
         intentResult.message +
         " " +
-        intentResult.successResult.match_results[0].intentName
+        intentResult.successResult.match_results[0].inputSentence
     );
     // this just wait before doing the next call
     await new Promise((resolve) => setTimeout(resolve, 100));
@@ -267,6 +268,7 @@ async function analyzeIntent(intents: string[]) {
 }
 
 // Function to perform a single API POST request
+// MARK: postdata
 async function postData(intent: string, access_token: string): Promise<any> {
   const myHeaders = new Headers();
   myHeaders.append("x-api-key", "jeXR0XggdGcIDKtdYymmhF137CNcdqUA");
