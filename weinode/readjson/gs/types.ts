@@ -212,3 +212,51 @@ export interface Root {
     preferredContactMethod: any
   }
   
+  export interface IntentResult {
+  success:       boolean;
+  successResult: SuccessResult;
+  message:       string;
+}
+
+export interface SuccessResult {
+  match_results: MatchResult[];
+}
+
+export interface MatchResult {
+  inputSentence:                 string;
+  intentName:                    string;
+  intentId:                      string;
+  displayName:                   string;
+  chatBotPlatformUserId:         null;
+  chatBotId:                     null;
+  status:                        string;
+  word2vecNLUResult:             null;
+  wordnetNLUResult:              null;
+  inputSentenceNLP:              null;
+  minDistance:                   number;
+  score:                         null;
+  knowledgeDataSourceId:         null;
+  knowledgeArticleId:            null;
+  language:                      null;
+  originalSentence:              string;
+  entityProcessedSentence:       null;
+  keyPhrasesMatched:             null;
+  metaIntent:                    string;
+  metaIntentId:                  string;
+  slotValues:                    null;
+  entityValues:                  null;
+  domainId:                      null;
+  domainName:                    null;
+  domainType:                    null;
+  modelVersionId:                null;
+  modelVersion:                  null;
+  domainModelVersion:            null;
+  source:                        null;
+  nerResponse:                   null;
+  includesGeneratedTrainingData: null;
+  keyPhraseMatch:                boolean;
+  combinedAverageMinDistance:    number;
+  adjustedMinDistance:           number;
+  domainTypeName:                string;
+  primaryDomain:                 null;
+}

@@ -2,6 +2,15 @@
 // parse into an example class
 // output result to a tab delimited txt file
 // so it can be imported to googlsheet for analyzing
+require("dotenv").config();
+
+import { createClient } from "@libsql/client";
+
+const dbclient = createClient({
+  url: process.env.TURSO_DATABASE_URL!,
+  authToken: process.env.TURSO_AUTH_TOKEN,
+});
+
 
 import * as convoTypes from "./types";
 import * as fs from "fs";
@@ -9,11 +18,13 @@ import * as path from "path";
 import internal from "stream";
 
 const filePath = "data.json";
-const page = "003";
+const page = "322024";
 const outputfileDir = `data/output/${page}/`;
 // Directory path
 const inputDir = `data/json/${page}`;
 const outputFullPath = outputfileDir + page + ".txt";
+
+const NLUDomain = "68384fbc-fa2a-4a32-b7fe-0226724e31ec";
 
 const header = `lpconvoId\taIntent\taConvoId\tgsIntent\tstartSkill\tfinalSkill\ttransfers\tmessage\textract\n`;
 
@@ -36,8 +47,9 @@ fs.readdir(inputDir, (err, files) => {
   }
 
   // Iterate over the files
-  files.forEach((file) => {
+  files.forEach(async (file) => {
     // Full path to the file
+
     const filePath = path.join(inputDir, file);
     console.log("process file = " + filePath);
 
@@ -86,6 +98,7 @@ fs.readdir(inputDir, (err, files) => {
           jsonData.conversationHistoryRecords;
         // console.log(convos.length);
         let i = 0;
+        let intents: string[] = [];
         for (const convo of convos) {
           let example: Example = new Example();
           let appleIntent = "";
@@ -105,11 +118,13 @@ fs.readdir(inputDir, (err, files) => {
           example.payload = cleanPayload(
             convo.messageRecords[0].messageData.msg.text
           );
-          const payloadMsg = convo.messageRecords[0].messageData.msg.text
-          console.log("🚀 ~ fs.readFile ~ payloadMsg:", payloadMsg)
+          const payloadMsg = convo.messageRecords[0].messageData.msg.text;
+          // console.log("🚀 ~ fs.readFile ~ payloadMsg:", payloadMsg)
           const extractStr = extractPayload(payloadMsg);
           const lastLine = getLastLine(payloadMsg);
-          example.extract = extractStr + " " + lastLine;
+          const fullMsg = extractStr + " " + lastLine;
+          example.extract = fullMsg;
+          intents.push(fullMsg);
 
           // get the latest transfer event
           let lastTime = 0;
@@ -150,6 +165,8 @@ fs.readdir(inputDir, (err, files) => {
             // console.log("Data has been written to the file:", outputFullPath);
           });
         }
+        console.log(intents.length);
+        analyzeIntent(intents);
       } catch (parseError) {
         console.error("Error parsing JSON:", parseError);
       }
@@ -179,36 +196,111 @@ function cleanPayload(msg: string) {
 function extractPayload(msg: string) {
   // console.log("🚀 ~ extractPayload ~ msg:", msg)
   const text = '[09:20 EST] customer: "I need help with this payment"';
-  const regex = /customer:\s*"([^"]*)"/ig; // Match "customer:" followed by non-quote characters inside quotes (global flag)
+  const regex = /customer:\s*"([^"]*)"/gi; // Match "customer:" followed by non-quote characters inside quotes (global flag)
   let match;
-  let finalStr = ""
+  let finalStr = "";
   while ((match = regex.exec(msg)) !== null) {
-      const parsedText = match[1].trim(); // Extracting the part after "customer:"
-      console.log("🚀 ~ extractPayload ~ parsedText:", parsedText)
-      finalStr = finalStr + " " + parsedText
+    const parsedText = match[1].trim(); // Extracting the part after "customer:"
+    // console.log("🚀 ~ extractPayload ~ parsedText:", parsedText)
+    finalStr = finalStr + " " + parsedText;
   }
-  return finalStr
+  return finalStr;
 }
 
-function getLastLine(msg: string){
-//   const text = `****End Conversation Context****
-// hello can i change trevion to a co owner instead of participant`;
-  const lines = msg.split('\n');
+function getLastLine(msg: string) {
+  //   const text = `****End Conversation Context****
+  // hello can i change trevion to a co owner instead of participant`;
+  const lines = msg.split("\n");
   const lastLine = lines[lines.length - 1].trim();
-  console.log("🚀🚀🚀🚀 ~ getLastLine ~ lastLine:", lastLine)
-  return (!lastLine.includes("End Conversation Context")) ? lastLine : ""
+  // console.log("🚀🚀🚀🚀 ~ getLastLine ~ lastLine:", lastLine)
+  return !lastLine.includes("End Conversation Context") ? lastLine : "";
+}
+async function analyzeIntent(intents: string[]) {
+  const tokenHeaders = tokenHeader();
+
+  const tokenOptions = tokenOption(tokenHeaders);
+
+  const response = await fetch(
+    "https://us.livepersonapis.com/auth/v2/accesstoken?grant_type=client_credentials",
+    tokenOptions
+  );
+  const jsonData = await response.json();
+  const access_token = jsonData.access_token;
+  console.log("🚀 ~ files.forEach ~ access_token:", access_token);
+
+  
+
+  for(let intent in intents){
+    console.log("process intent")
+    const intentResult: convoTypes.IntentResult = await postData(intent, access_token);
+    console.log(intentResult.success)
+    await new Promise(resolve => setTimeout(resolve, 1000))
+  }
+
+  // const raw = JSON.stringify({
+  //   input: fullMsg,
+  //   predictAcrossDomain: true,
+  // });
+
+  // const requestOptions = {
+  //   method: "POST",
+  //   headers: myHeaders,
+  //   body: raw,
+  // };
+
+  // const result = await fetch(
+  //   "https://us.livepersonapis.com/cb/nlu/v1/accounts/36416044/domains/68384fbc-fa2a-4a32-b7fe-0226724e31ec/intentDetection/predict",
+  //   requestOptions
+  // );
+  // const jsonObject = await result.json();
+  // console.log(JSON.stringify(jsonObject));
+}
+
+// Function to perform a single API POST request
+async function postData(intent:string, access_token:string): Promise<any> {
+  const myHeaders = new Headers();
+  myHeaders.append("x-api-key", "jeXR0XggdGcIDKtdYymmhF137CNcdqUA");
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", `Bearer ${access_token}`);
+
+   const raw = JSON.stringify({
+    input: intent,
+    predictAcrossDomain: true,
+  });
+
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: raw,
+  };
+
+  const result = await fetch(
+    "https://us.livepersonapis.com/cb/nlu/v1/accounts/36416044/domains/68384fbc-fa2a-4a32-b7fe-0226724e31ec/intentDetection/predict",
+    requestOptions
+  );
+  const jsonObject = await result.json();
+  console.log(JSON.stringify(jsonObject));
+  console.log(process.env.TOKEN);
+  return jsonObject;
+}
 
 
-  // const regex = /.*(?:[\r\n]+([^]+))/;
-  // const match = msg.match(regex);
 
-  // if (match && match.length > 1) {
-  //     const lastLine = match[1].trim();
-  //     console.log("🚀 ~ getLastLine ~ lastLine:", lastLine)
-  //     return (!lastLine.includes("End Conversation Context")) ? lastLine : ""
-  // } else {
-  //     console.log("No match found.");
-  // }
-  // return ""
 
+
+function tokenHeader() {
+  const myHeaders = new Headers();
+  myHeaders.append("x-api-key", "jeXR0XggdGcIDKtdYymmhF137CNcdqUA");
+  myHeaders.append(
+    "Authorization",
+    "Basic amVYUjBYZ2dkR2NJREt0ZFl5bW1oRjEzN0NOY2RxVUE6VVVTV1ZuMktrdEpFQm1hQg=="
+  );
+  return myHeaders;
+}
+
+function tokenOption(myHeaders) {
+  return {
+    method: "POST",
+    headers: myHeaders,
+  };
 }
