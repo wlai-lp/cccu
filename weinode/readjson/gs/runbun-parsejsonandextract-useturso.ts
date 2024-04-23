@@ -2,24 +2,44 @@
 // parse into an example class
 // output result to a tab delimited txt file
 // so it can be imported to googlsheet for analyzing
+require("dotenv").config();
+
+import { createClient } from "@libsql/client";
+
+const dbclient = createClient({
+  url: process.env.TURSO_DATABASE_URL!,
+  authToken: process.env.TURSO_AUTH_TOKEN,
+});
 
 import * as convoTypes from "./types";
 import * as fs from "fs";
 import * as path from "path";
-import { ReadJsonFile } from "./ReadJsonFile";
+import internal from "stream";
 
-// output setup
+const filePath = "data.json";
 const page = "005";
 const outputfileDir = `data/output/${page}/`;
 createFolder(outputfileDir);
+// check to make sure the folder exist
 
-// input setup
+// Directory path
 const inputDir = `data/json/${page}`;
-export const outputFullPath = outputfileDir + page + ".txt";
+const outputFullPath = outputfileDir + page + ".txt";
+
+const NLUDomain = "68384fbc-fa2a-4a32-b7fe-0226724e31ec";
 
 const header = `lpconvoId\taIntent\taConvoId\tgsIntent\tstartSkill\tfinalSkill\ttransfers\tmessage\textract\n`;
+
+console.log("start " + Date.now());
+
 // create outputfile and prefix with header
-createOutputFile();
+fs.writeFile(outputFullPath, header, (err) => {
+  if (err) {
+    console.error("Error creating file:", err);
+    return;
+  }
+  console.log("File created successfully:", outputFullPath);
+});
 
 console.log("reading input file dir " + inputDir);
 fs.readdir(inputDir, (err, files) => {
@@ -29,42 +49,146 @@ fs.readdir(inputDir, (err, files) => {
   }
 
   // Iterate over the files
-  ProcessInputFiles(files);
-});
-
-console.log("done " + Date.now());
-
-function ProcessInputFiles(files: string[]) {
   files.forEach(async (file) => {
     // Full path to the file
+
     const filePath = path.join(inputDir, file);
     console.log("process file = " + filePath);
 
     // Read the JSON file
-    ReadJsonFile(filePath);
-  });
-}
+    fs.readFile(filePath, "utf8", (err, data) => {
+      // console.log("hello");
 
-function createOutputFile() {
-  fs.writeFile(outputFullPath, header, (err) => {
-    if (err) {
-      console.error("Error creating file:", err);
-      return;
-    }
-    console.log("File created successfully:", outputFullPath);
+      if (err) {
+        console.error("Error reading the file:", err);
+        return;
+      }
+
+      class Example {
+        lpconvoId: string;
+        aIntent: string;
+        aConvoId: string;
+        gsIntent: string;
+        finalSkill: string;
+        startSkill: string;
+        transfers: number;
+        payload: string;
+        extract: string;
+        constructor() {
+          this.lpconvoId = "";
+          this.aIntent = "";
+          this.aConvoId = "";
+          this.gsIntent = "";
+          this.finalSkill = "";
+          this.startSkill = "";
+          this.transfers = 0;
+          this.payload = "";
+          this.extract = "";
+        }
+        toString() {
+          return `${this.lpconvoId}\t${this.aIntent}\t${this.aConvoId}\t${this.gsIntent}\t${this.startSkill}\t${this.finalSkill}\t${this.transfers}\t${this.payload}\t${this.extract}\n`;
+        }
+      }
+
+      try {
+        // Parse the JSON data
+        const jsonData1 = JSON.parse(data);
+        // const jsonData = jsonData1.conversationHistoryRecords;
+        const jsonData: convoTypes.Root = jsonData1;
+        // console.log(jsonData._metadata);
+        const convos: convoTypes.ConversationHistoryRecord[] =
+          jsonData.conversationHistoryRecords;
+        // console.log(convos.length);
+        let i = 0;
+        let intents: string[] = [];
+        for (const convo of convos) {
+          let example: Example = new Example();
+          let appleIntent = "";
+          // console.log(convo.messageRecords[0].messageData.msg.text);
+          // if(!convo.messageRecords[0].messageData.msg.text.includes("\n") || !convo.messageRecords[0])
+          //     continue;
+
+          // console.log(JSON.stringify(convo.messageRecords))
+
+          const msg: string[] =
+            convo.messageRecords[0].messageData.msg.text.split("\n");
+          const aIntnet = msg[3];
+          const aConvoId = msg[4];
+          example.lpconvoId = convo.info.conversationId;
+          example.aIntent = aIntnet;
+          example.aConvoId = aConvoId;
+          example.payload = cleanPayload(
+            convo.messageRecords[0].messageData.msg.text
+          );
+          const payloadMsg = convo.messageRecords[0].messageData.msg.text;
+          // console.log("🚀 ~ fs.readFile ~ payloadMsg:", payloadMsg)
+          const extractStr = extractPayload(payloadMsg);
+          const lastLine = getLastLine(payloadMsg);
+          const fullMsg = extractStr + " " + lastLine;
+          example.extract = fullMsg;
+          intents.push(fullMsg);
+
+          // get the latest transfer event
+          let lastTime = 0;
+          let firstTime = 2701450003915;
+          for (const t of convo.transfers) {
+            example.transfers++;
+            if (t.timeL < firstTime) {
+              example.startSkill = t.sourceSkillName;
+              firstTime = t.timeL;
+            }
+            if (t.timeL > lastTime) {
+              // console.log(t.sourceSkillName)
+              example.finalSkill = t.targetSkillName;
+              lastTime = t.timeL;
+            }
+          }
+
+          i++;
+          // const customerInfo = convo.sdes.events[0].customerInfo;
+          for (const event of convo.sdes.events) {
+            if (event.sdeType == "CUSTOMER_INFO") {
+              appleIntent = event.customerInfo?.customerInfo.companyBranch!;
+              example.gsIntent =
+                event.customerInfo?.customerInfo.companyBranch!;
+            }
+          }
+          // console.log("no. " + i + " = " + convo.info.conversationId + ", apple intent = " + appleIntent);
+          // console.log("apple intent is " + appleIntent);
+
+          // here's where we put all the custom transfer logic evaluation
+
+          //   console.log(example.toString());
+          fs.appendFile(outputFullPath, example.toString(), (err) => {
+            if (err) {
+              console.error("Error writing to file:", err);
+              return;
+            }
+            // console.log("Data has been written to the file:", outputFullPath);
+          });
+        }
+        console.log(intents.length);
+        // analyzeIntent(intents);
+      } catch (parseError) {
+        console.error("Error parsing JSON:", parseError);
+      }
+    });
   });
-}
+});
+
+console.log("done " + Date.now());
 
 function createFolder(folderPath) {
   if (!fs.existsSync(folderPath)) {
-    fs.mkdirSync(folderPath);
-    console.log(`Folder '${folderPath}' created.`);
+      fs.mkdirSync(folderPath);
+      console.log(`Folder '${folderPath}' created.`);
   } else {
-    console.log(`Folder '${folderPath}' already exists.`);
+      console.log(`Folder '${folderPath}' already exists.`);
   }
 }
 
-export function cleanPayload(msg: string) {
+
+function cleanPayload(msg: string) {
   // const msg = "****Start Conversation Context****\n\nSource: BOT\nIntent: payment_hold_list\nApple Conversation ID: 1701968235955-515498ff5b3efa77207d3a18b99228e16440\n\nTranscript:\n\n[11:57  EST] customer: \"I’d like some help with a payment.\"\n\n[11:57  EST] NLP_BOT: \"I can help with this Apple Card payment. Which best describes your issue?\n\n1. Cancel payment\n2. Available credit after payment\n3. Something else\"\n\n[11:57  EST] customer: \"Available credit after payment\"\n\n[11:57  EST] NLP_BOT: \"Thanks. Just a moment while Goldman Sachs reviews your request.\"\n\n[11:57  EST] NLP_BOT: \"Thanks. Just a moment while Goldman Sachs reviews your request.\"\n\n****End Conversation Context****\n\ni'd like some help with a payment."
 
   const cleanDoubleQuote = msg.replace(/\"/g, "'");
@@ -81,7 +205,7 @@ export function cleanPayload(msg: string) {
   return result;
 }
 
-export function extractPayload(msg: string) {
+function extractPayload(msg: string) {
   // console.log("🚀 ~ extractPayload ~ msg:", msg)
   const text = '[09:20 EST] customer: "I need help with this payment"';
   const regex = /customer:\s*"([^"]*)"/gi; // Match "customer:" followed by non-quote characters inside quotes (global flag)
@@ -92,40 +216,17 @@ export function extractPayload(msg: string) {
     // console.log("🚀 ~ extractPayload ~ parsedText:", parsedText)
     finalStr = finalStr + " " + parsedText;
   }
-  finalStr = removeNewlines(finalStr)
   return finalStr;
 }
 
-export function getLastLine(msg: string) {
+function getLastLine(msg: string) {
   //   const text = `****End Conversation Context****
   // hello can i change trevion to a co owner instead of participant`;
   const lines = msg.split("\n");
   const lastLine = lines[lines.length - 1].trim();
-  // TODO: process exceptions
-  const result = dropExceptions(lastLine);
   // console.log("🚀🚀🚀🚀 ~ getLastLine ~ lastLine:", lastLine)
   return !lastLine.includes("End Conversation Context") ? lastLine : "";
 }
-
-function removeNewlines(input: string): string {
-  return input.replace(/\n/g, "");
-}
-
-
-function dropExceptions(msg: string) {
-  const exceptionStrings: string[] = [];
-  // add all the exceptions here
-  exceptionStrings.push("****End Conversation Context****");
-  exceptionStrings.push("*** Form end ***");
-
-  for (const str of exceptionStrings) {
-    if (str.includes(msg)) {
-      return "";
-    }
-  }
-  return msg;
-}
-
 async function analyzeIntent(intents: string[]) {
   const tokenHeaders = tokenHeader();
 
@@ -147,7 +248,7 @@ async function analyzeIntent(intents: string[]) {
       access_token
     );
     // const record = await insertIntentRecord(intentResult);
-    console.log("🚀 ~ analyzeIntent ~ intentResult:", intentResult);
+    console.log("🚀 ~ analyzeIntent ~ intentResult:", intentResult)
     console.log(
       "🚀 ~ " +
         intentResult.success +
@@ -228,7 +329,10 @@ function tokenHeader() {
   const appKey = process.env.APPKEY;
   const basic = process.env.BASIC;
   myHeaders.append("x-api-key", appKey!);
-  myHeaders.append("Authorization", `Basic ${basic}`);
+  myHeaders.append(
+    "Authorization",
+    `Basic ${basic}`
+  );
   return myHeaders;
 }
 
@@ -240,16 +344,15 @@ function tokenOption(myHeaders) {
 }
 async function insertIntentRecord(intentResult: convoTypes.IntentResult) {
   try {
-    const message = intentResult.message;
-    const inputSentence =
-      intentResult.successResult.match_results[0].inputSentence;
-    const intentName = intentResult.successResult.match_results[0].intentName;
-    const status = intentResult.successResult.match_results[0].status;
-    const metaIntent = intentResult.successResult.match_results[0].metaIntent;
+    const message = intentResult.message
+    const inputSentence = intentResult.successResult.match_results[0].inputSentence
+    const intentName = intentResult.successResult.match_results[0].intentName
+    const status = intentResult.successResult.match_results[0].status
+    const metaIntent = intentResult.successResult.match_results[0].metaIntent
     const rs = await dbclient.execute({
       sql: `insert into intent_call(message, inputSentence, intentName, status, metaIntent)
             values (:message, :inputSentence, :intentName, :status, :metaIntent)`,
-      args: { message, inputSentence, intentName, status, metaIntent },
+      args: { message, inputSentence, intentName, status,metaIntent },
     });
     // lastInsertRowid is primary key
     console.log(`batchTable last insert record is ${rs.lastInsertRowid}`);
