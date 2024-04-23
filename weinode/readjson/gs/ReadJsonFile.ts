@@ -104,10 +104,8 @@ export function ReadJsonFile(filePath: string) {
         // const customerInfo = convo.sdes.events[0].customerInfo;
         for (const event of convo.sdes.events) {
           if (event.sdeType == "CUSTOMER_INFO") {
-            appleIntent = (event.customerInfo?.customerInfo.companyBranch)!;
-            example.gsIntent =
-              (
-                event.customerInfo?.customerInfo.companyBranch)!;
+            // appleIntent = (event.customerInfo?.customerInfo.companyBranch)!;
+            example.gsIntent = (event.customerInfo?.customerInfo.companyBranch)!;
           }
         }
         // console.log("no. " + i + " = " + convo.info.conversationId + ", apple intent = " + appleIntent);
