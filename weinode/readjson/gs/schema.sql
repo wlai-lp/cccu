@@ -15,7 +15,9 @@ CREATE TABLE intent_call (
 --   batch_run_id INTEGER NOT NULL,  
   message TEXT DEFAULT '',
   inputSentence TEXT DEFAULT '',
-  intentName TEXT DEFAULT ''
+  intentName TEXT DEFAULT '',
+  status TEXT DEFAULT '',
+  metaIntent TEXT DEFAULT ''
 --   FOREIGN KEY (batch_run_id) REFERENCES intent_batch_run(batch_run_id) ON DELETE CASCADE
 );
 

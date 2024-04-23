@@ -332,10 +332,12 @@ async function insertIntentRecord(intentResult: convoTypes.IntentResult) {
     const message = intentResult.message
     const inputSentence = intentResult.successResult.match_results[0].inputSentence
     const intentName = intentResult.successResult.match_results[0].intentName
+    const status = intentResult.successResult.match_results[0].status
+    const metaIntent = intentResult.successResult.match_results[0].metaIntent
     const rs = await dbclient.execute({
-      sql: `insert into intent_call(message, inputSentence, intentName)
-            values (:message, :inputSentence, :intentName)`,
-      args: { message, inputSentence, intentName },
+      sql: `insert into intent_call(message, inputSentence, intentName, status, metaIntent)
+            values (:message, :inputSentence, :intentName, :status, :metaIntent)`,
+      args: { message, inputSentence, intentName, status,metaIntent },
     });
     // lastInsertRowid is primary key
     console.log(`batchTable last insert record is ${rs.lastInsertRowid}`);
