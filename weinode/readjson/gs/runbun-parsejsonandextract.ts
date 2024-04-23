@@ -313,10 +313,12 @@ async function createBatch(start_timestamp: number) {
 
 function tokenHeader() {
   const myHeaders = new Headers();
-  myHeaders.append("x-api-key", "jeXR0XggdGcIDKtdYymmhF137CNcdqUA");
+  const appKey = process.env.APPKEY;
+  const basic = process.env.BASIC;
+  myHeaders.append("x-api-key", appKey!);
   myHeaders.append(
     "Authorization",
-    "Basic amVYUjBYZ2dkR2NJREt0ZFl5bW1oRjEzN0NOY2RxVUE6VVVTV1ZuMktrdEpFQm1hQg=="
+    `Basic ${basic}`
   );
   return myHeaders;
 }
